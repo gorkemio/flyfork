@@ -10,9 +10,22 @@ import shlex
 import subprocess
 import sys
 import time
-import urllib.request
 
 DAY = 86400
+
+def verify_public_generation(expected):
+    # Use the existing standard client; do not impersonate a browser, follow
+    # redirects, retry, or disable TLS verification to evade a CDN error.
+    result = subprocess.run(['curl', '--fail', '--silent', '--show-error',
+                             '--proto', '=https', '--max-time', '20',
+                             '--write-out', '\n%{http_code}',
+                             'https://flyfork.org/build-info.json'], capture_output=True)
+    if result.returncode:
+        raise ValueError('Public HTTPS verification failed: ' + result.stderr.decode(errors='replace'))
+    data, separator, status = result.stdout.rpartition(b'\n')
+    if not separator or status != b'200':raise ValueError('Public HTTPS verification requires HTTP 200')
+    if hashlib.sha256(data).hexdigest() != expected:
+        raise ValueError('Actual public generation does not match selected pair variant')
 
 def admit(state, request, now):
     if request['variant'] not in ('forward', 'rollback'):
@@ -63,9 +76,7 @@ def remote_operation(request):
             state['pending'] = incoming
         elif request['operation'] == 'confirm':
             if state.get('pending') != incoming:raise ValueError('No matching prepared release')
-            data = urllib.request.urlopen('https://flyfork.org/build-info.json',timeout=20).read()
-            if hashlib.sha256(data).hexdigest() != incoming['generations'][incoming['variant']]:
-                raise ValueError('Actual public generation does not match selected pair variant')
+            verify_public_generation(incoming['generations'][incoming['variant']])
             state = activate(state,incoming,now)
         else:raise ValueError('Unknown operation')
         temp = folder/'release.next'
@@ -95,7 +106,10 @@ def main():
                             'generations':{v:pair['outputs'][v]['active'] for v in ['forward','rollback']},'variant':args.variant}
     code=pathlib.Path(__file__).read_text()
     command='python3 -c '+shlex.quote(code)+' --remote'
-    result=subprocess.run(['ssh','-o','BatchMode=yes','-o','StrictHostKeyChecking=yes','-o','UpdateHostKeys=no','-o','ForwardAgent=no','-o','ControlMaster=no','-o','ControlPath=none',args.ssh,command],input=json.dumps(request),text=True,check=True,capture_output=True)
+    result=subprocess.run(['ssh','-o','BatchMode=yes','-o','StrictHostKeyChecking=yes','-o','UpdateHostKeys=no','-o','ForwardAgent=no','-o','ControlMaster=no','-o','ControlPath=none',args.ssh,command],input=json.dumps(request),text=True,capture_output=True)
+    if result.returncode:
+        print(result.stderr,end='',file=sys.stderr)
+        raise SystemExit(result.returncode)
     print(result.stdout,end='')
     if args.operation=='prepare':
         print('Prepared. Select this digest in the FlyFork Dokploy service, deploy manually, then run confirm:')
