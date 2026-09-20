@@ -1,0 +1,50 @@
+services:
+  flyfork:
+    image: ${FLYFORK_IMAGE:?Select an immutable verified GHCR digest}
+    platform: linux/amd64
+    user: '101:101'
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    cpus: 1.0
+    mem_limit: 256m
+    pids_limit: 64
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m,uid=101,gid=101,mode=700
+    restart: unless-stopped
+    stop_grace_period: 10s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+    networks: [proxy]
+    labels:
+      org.flyfork.service: experimental-demo
+      traefik.enable: ${FLYFORK_PUBLIC:-false}
+      traefik.docker.network: dokploy-network
+      traefik.http.services.flyfork-public.loadbalancer.server.port: '8080'
+      traefik.http.routers.flyfork-https.rule: Host(`flyfork.org`)
+      traefik.http.routers.flyfork-https.entrypoints: websecure
+      traefik.http.routers.flyfork-https.tls.certresolver: letsencrypt
+      traefik.http.routers.flyfork-https.tls.domains[0].main: flyfork.org
+      traefik.http.routers.flyfork-https.tls.domains[0].sans: www.flyfork.org
+      traefik.http.routers.flyfork-https.service: flyfork-public
+      traefik.http.routers.flyfork-www.rule: Host(`www.flyfork.org`)
+      traefik.http.routers.flyfork-www.entrypoints: websecure
+      traefik.http.routers.flyfork-www.tls.certresolver: letsencrypt
+      traefik.http.routers.flyfork-www.service: flyfork-public
+      traefik.http.routers.flyfork-www.middlewares: flyfork-canonical
+      traefik.http.middlewares.flyfork-canonical.redirectregex.regex: '^https?://www\.flyfork\.org/(.*)'
+      traefik.http.middlewares.flyfork-canonical.redirectregex.replacement: 'https://flyfork.org/$${1}'
+      traefik.http.middlewares.flyfork-canonical.redirectregex.permanent: 'true'
+      traefik.http.routers.flyfork-http.rule: Host(`flyfork.org`) || Host(`www.flyfork.org`)
+      traefik.http.routers.flyfork-http.entrypoints: web
+      traefik.http.routers.flyfork-http.service: flyfork-public
+      traefik.http.routers.flyfork-http.middlewares: flyfork-https-only
+      traefik.http.middlewares.flyfork-https-only.redirectscheme.scheme: https
+      traefik.http.middlewares.flyfork-https-only.redirectscheme.permanent: 'true'
+networks:
+  proxy:
+    external: true
+    name: dokploy-network

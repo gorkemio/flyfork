@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.pnpm-store/
+
+data/raw/
+
+artifacts/
+.env
+.env.*
+.venv*/
+__pycache__/

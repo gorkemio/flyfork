@@ -1,0 +1,811 @@
+{
+  "version": 1,
+  "policy": "Explicit files only; no wildcard copying. Frozen hashes require separate review. The manifest is generated separately and never hashes itself.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "purpose": "Build/dependency/test configuration"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "README.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "SECURITY.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "data/prepared/male-cns-dm1.json",
+      "purpose": "Frozen prepared MaleCNS runtime data",
+      "sha256": "38f691ce9d38faddb8277ada9f7ae70b198eb347742ede6b67fc8697925c2d0d"
+    },
+    {
+      "path": "data/prepared/male-cns-dm1.manifest.json",
+      "purpose": "Frozen dataset provenance",
+      "sha256": "f04d4e2e399bae8906b3d5a0b677f8a071253822598d26523e49b1342d3c1705"
+    },
+    {
+      "path": "docs/dependency-inventory.json",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/evidence/stage-4/round-trip.flyfork.json",
+      "purpose": "Required generated round-trip test input; sole historical evidence exception",
+      "sha256": "b02b2d88706cc0e7b56ab0834dacb2d7af208aa994e0cbea25ad3f3af614946c"
+    },
+    {
+      "path": "docs/licenses.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/model.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/plan/stage-3-behavior-preregistration.md",
+      "purpose": "Required matrix test preregistration; exact original bytes",
+      "sha256": "ea9b5b7803bb1eba43e6c26510e3c7e00506e0deec40bc6fc84551d69b1e0457"
+    },
+    {
+      "path": "docs/record-format.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/release-preparation.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/usage.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "docs/verification.md",
+      "purpose": "Public-facing developer/user/review documentation"
+    },
+    {
+      "path": "eslint.config.js",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "2d1e577f96c19044cb2fbe31ec2b983da0576fd4df67fefd0abfccd627105dd4"
+    },
+    {
+      "path": "index.html",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "007ae8156f999df5d824e50705c95b53c1ac13aa143ae8b330efba21b7b6aae0"
+    },
+    {
+      "path": "package.json",
+      "purpose": "Build/dependency/test configuration"
+    },
+    {
+      "path": "playwright.config.ts",
+      "purpose": "Build/dependency/test configuration"
+    },
+    {
+      "path": "playwright.portable.config.ts",
+      "purpose": "Build/dependency/test configuration"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "df634e49cfcae72fe4a1c66881788d2bcf055468cfebf5958d43b8c66f981d95"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "531f982a8d599a62e80d118de3bb85399a010b7529985e74ac89a74cf2b1392f"
+    },
+    {
+      "path": "public/assets/lab/concrete-floor-02/LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/assets/lab/concrete-floor-02/epoxy_diff_512.jpg",
+      "purpose": "Required runtime asset, license or public provenance",
+      "sha256": "e3c7c9fa39568ae335f910f19cfba37c99307da7bc4c72c44afdeff4623be94a"
+    },
+    {
+      "path": "public/assets/lab/concrete-floor-02/epoxy_nor_gl_512.jpg",
+      "purpose": "Required runtime asset, license or public provenance",
+      "sha256": "423ee8b0e5326d6e9e6bc26edab23ba627508cfabe04a5b35b4098a6a14e6d64"
+    },
+    {
+      "path": "public/assets/lab/concrete-floor-02/epoxy_rough_512.jpg",
+      "purpose": "Required runtime asset, license or public provenance",
+      "sha256": "9eb1e37f7a552a10d0c6513b3ee2c85a7c6dc3d434b0b0aba80122b1fa605910"
+    },
+    {
+      "path": "public/assets/lab/concrete-floor-02/provenance.json",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/favicon.svg",
+      "purpose": "Required runtime asset, license or public provenance",
+      "sha256": "0b7e50376a879443e8bb314964bf5c1f9c24d54289a1e00ceb9b14ca1ce2b851"
+    },
+    {
+      "path": "public/licenses/dexie-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/dexie-NOTICE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/react-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/react-dom-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/scheduler-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/three-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/licenses/zod-LICENSE.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "public/third-party-notices.txt",
+      "purpose": "Required runtime asset, license or public provenance"
+    },
+    {
+      "path": "scripts/data/download.py",
+      "purpose": "Optional historical data preparation/regression source; not normal app build",
+      "sha256": "308b4f4a9fd0401b63b0acb4535009917d59b2a8e836d9e9fcea2381e0467a3f"
+    },
+    {
+      "path": "scripts/data/prepare.py",
+      "purpose": "Optional historical data preparation/regression source; not normal app build",
+      "sha256": "82629899c8df66e6d9c4720972bf71706883a71fc7acd920111518c203c388d8"
+    },
+    {
+      "path": "scripts/data/requirements.lock.txt",
+      "purpose": "Optional historical data preparation/regression source; not normal app build",
+      "sha256": "d45c2e6f942ae601f6cd1d1fbed38bbaf5d6fa900cd4fa5603cbab472aff98dd"
+    },
+    {
+      "path": "scripts/data/test_prepare.py",
+      "purpose": "Optional historical data preparation/regression source; not normal app build",
+      "sha256": "cef46f7343fd93884a1d70a19aa5ae148b46f17c313d49732d445129068a2364"
+    },
+    {
+      "path": "scripts/r3-output.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests",
+      "sha256": "ded5d0953540dc1831a4d31481fcc8dec8583473664a8f1f9733d947fa6e6256"
+    },
+    {
+      "path": "scripts/source-allowlist.json",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/source-package.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/source-package.test.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/verification-paths.d.mts",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/verification-paths.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/verification.test.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/verify-vitest.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "purpose": "Portable verification/source packaging and focused guard tests"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "aed23e4735c1863f3c3df8f083bd3eebccf7898035fd01f011e326d2117dd6b7"
+    },
+    {
+      "path": "src/app/CircuitPanel.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "42cbb68cfaef37b52f326c090914aa5882df0caa3389477775f3193f2cc80a42"
+    },
+    {
+      "path": "src/app/Dialog.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "ad50629483dfa93d0d794ffaf9b0fd3d15218bc7ce1336cad10c79cfd5e017de"
+    },
+    {
+      "path": "src/app/DivergencePlot.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "63445d84bccadd24da5e12ee18296e415d4359602f555b4f730d51c4176ad60f"
+    },
+    {
+      "path": "src/app/EventSummary.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "a3d190452b4408a129f108e28970ef036d880a4aa19feeee9fb93042f8b3124f"
+    },
+    {
+      "path": "src/app/InterventionPanel.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "baa83ff54b66a2942338221a2294eede9a2996cc4978f2fa913fc639f51c1d07"
+    },
+    {
+      "path": "src/app/MetricsPanel.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "2a7a2f5881ab4b0598afddd0d899be940c2f30e5fb345dc19e7587300d3e012c"
+    },
+    {
+      "path": "src/app/ModelDetails.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "0c438b94507ffd5be70bc6626536b8cf5072481f538dde783f4fd346cced6a46"
+    },
+    {
+      "path": "src/app/SelectedCircuit.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "afae5837773066e61f9fe982a28bd04cf3320cb0a84538d7767c740ddf7da19b"
+    },
+    {
+      "path": "src/app/WorkspaceDialogs.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "2b70c5da4b51af091e9635d44b55091183f6e5ace36620aeee8a040bb48e4b05"
+    },
+    {
+      "path": "src/app/WorkspaceToolbar.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "1076dcbe9236d2cfaff468cde255a093843dc552826f6a861da3637fe70fd484"
+    },
+    {
+      "path": "src/app/control-intent.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "7243af2ee77163be5af7a647e2867cfa5a8a6118324af11b26e28209c0059c8c"
+    },
+    {
+      "path": "src/app/control-intent.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "7adde6d0c9a714f97bd9a3d468ac5ca2bf9282843442aebd9333d747ab5a096c"
+    },
+    {
+      "path": "src/app/guide.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "72d60b44ddfdbecc2bc4a86cdc126b5526408b4c7b29c5d84fcea1cbaf546e86"
+    },
+    {
+      "path": "src/app/lab-client.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "9b29ffc0d3b226630ec786ac192a1d90786793ccd5a965e226e4d700887a951d"
+    },
+    {
+      "path": "src/app/lab-client.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "f8caf7371ef4d4ae7cbb5ac3db74907f48abbd5dc867bc7ca5cc2a12194e32cd"
+    },
+    {
+      "path": "src/app/stage3.css",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "bd4ebdb096cb8742f4a5b63749571e81f89249c79526bd9a592b8428fcb07278"
+    },
+    {
+      "path": "src/app/stage4.css",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "355a469ac84809258634eb94a509969331ad22f6f687b4f2bea1ba72c5d7f22b"
+    },
+    {
+      "path": "src/app/styles.css",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "afd4ff1897a9b6838fdee8dd25eb45faf901bdf4870414a5fd384a0c38366ec9"
+    },
+    {
+      "path": "src/app/use-lab.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "5c27090502212921374cb84d0c92b7f4091ea822f6a24ab7a699ec4442fe473d"
+    },
+    {
+      "path": "src/app/use-workspace.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "7d05d3cd0ffbd93c55f6405d10314c616809d7b8ad9e2d811f5fef07aac1ea94"
+    },
+    {
+      "path": "src/app/visual-slice.css",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "9cd0b41a3fc555b6450a31bc512cb44ddaeb78fa19ada0959a5c5f3a379b5d9f"
+    },
+    {
+      "path": "src/datasets/adapter.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "cf9d76a4c62ad81466cf4178fe110ca335e1e0363e7a20c6029dddc47fb0bf95"
+    },
+    {
+      "path": "src/datasets/catalog.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "469f541f3ecdcb224b805f4f29cc1da24b737780dc1aa40cbfe9d02ea764d454"
+    },
+    {
+      "path": "src/experiments/branch.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "9c00070fac6cb8ec5b7e5a91785fd9061b47f3530d5eef67d10fcdd248e2a773"
+    },
+    {
+      "path": "src/experiments/branch.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "0e53f8bef05c3ce7426c68ec02d938286582e320dd8d453974f0a0087fae35b3"
+    },
+    {
+      "path": "src/experiments/budget.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "0b86526735bb6bb4478677790935e33572fed236254379a85f62787568273ebf"
+    },
+    {
+      "path": "src/experiments/checkpoints.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "462af6412c8dc0c8100cec4cb2e8d522fc713c8f18e321ed100fe2e46026bfe5"
+    },
+    {
+      "path": "src/experiments/events.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "e68206c6c46b50c6b95876182f1086b243660d7039d315e4cdff89f9d68535b7"
+    },
+    {
+      "path": "src/experiments/experiment.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "903b664a65db765a241f83562cd3d283363aad3ad97161754b4998247812b421"
+    },
+    {
+      "path": "src/experiments/experiment.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "441cdf2d850b5310c3d58d5df1aa18ac77b0021b80d547ecbff1260607fdbc0e"
+    },
+    {
+      "path": "src/experiments/matrix.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "93a75991f59429399215d90a59758bcebf6e793bf2b83868e43d203032d282d8"
+    },
+    {
+      "path": "src/experiments/persistence.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "afb3ee08a40c141d7a1d0cd66b9a665a3e750ac361c2a680ae3edcd7f3d45739"
+    },
+    {
+      "path": "src/experiments/record-compare.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "70338936daf473419403e7e4f22cbf0b2e0a4a5f3a823e8ae71b3fd0a7cde4f1"
+    },
+    {
+      "path": "src/main.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "04418f9afe6c4536a4913fc3f43754b3b99222b688077dfcece7a80095cfe375"
+    },
+    {
+      "path": "src/metrics/metrics.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "86515641a51c0b10832ff1e833760317b4b0fc2bf5ad9aa885737f1477ab1b7a"
+    },
+    {
+      "path": "src/metrics/metrics.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "9a25fb1ed92a7fd1e1473b620ded7923b1ad9d2effbf0dde73f2e28a18e507f7"
+    },
+    {
+      "path": "src/persistence/format.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "7db665f100a155252294dae044d0df384d89a0636f7314371cc5c2eec53d5f43"
+    },
+    {
+      "path": "src/persistence/format.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "03527282111e09f96848717227d9851244f4d21aa82c7af2c4956c187f387d98"
+    },
+    {
+      "path": "src/persistence/library.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "c6b0c1db3740ebcbfdb284a909ca8c9a91e1d2f795e1c94de215bbedfa1bf299"
+    },
+    {
+      "path": "src/persistence/recording.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "b9c6215fe294500a0c0bb5c0db96e41a529949869e11984bd44eb911c3d11898"
+    },
+    {
+      "path": "src/rendering/Arena.tsx",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "b199807f663c31be328a172f8bad0984e9cb58fa3ac92ef774567b5a475a2393"
+    },
+    {
+      "path": "src/rendering/fly.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "0b3bdb828d7a7c6181c011d62e4b4981d450f10e76007819a0234f14dd3209ac"
+    },
+    {
+      "path": "src/rendering/materials.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "b23a4016c9f2677a89710bc43639af7344a7e90fd5492b3b957e5442d00154d1"
+    },
+    {
+      "path": "src/rendering/pipeline.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "6c1adceca802803417c394807bfcf3990ad474479d551f88fa60e28e3d82ce84"
+    },
+    {
+      "path": "src/rendering/pose-buffer.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "e1ae36368cc9acceac665b0271d9792c760c964691c542170caeb8f27a7564a7"
+    },
+    {
+      "path": "src/rendering/pose-buffer.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "a4dd285c23092eefa27b22b119faea3d8cb2ae7b7aeb96c433a4890f3434a0bd"
+    },
+    {
+      "path": "src/rendering/presentation.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "d0408c5ec85bd827c90d6291c7b2f2593c0495a3fcf93533f68c63fc56771dae"
+    },
+    {
+      "path": "src/rendering/presentation.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "744cec941573d2244a568cf74504e54231409d99f4cc7af413d1ef305c0fe83a"
+    },
+    {
+      "path": "src/rendering/scene.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "2659041d3fe48b20c6f6b69f73d80f4e3a45e9ffcd5a4f914186a6677cc237af"
+    },
+    {
+      "path": "src/rendering/trail.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "12e9b44b3bf0e6869e39378937be45781d9e08c675211691afd24fa784deaca5"
+    },
+    {
+      "path": "src/simulation/config.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "cf1ba0616eb9652d6cd0ce631a77bcdece31a7a86b4db002376b2c9e02f560cb"
+    },
+    {
+      "path": "src/simulation/engine.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "c2b42b469d95592957e963652256850080e56d9d28c88a052dc19d6f71f55aa4"
+    },
+    {
+      "path": "src/simulation/engine.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "629cea9d2ab3fc85bd366b75c687bb3da8dfae6185b293bbaee5f63c264684bc"
+    },
+    {
+      "path": "src/simulation/feasibility.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "d6b4ba4d0216c6c3b76630d0469094e11661548db6d015587770f0ae9b1c4601"
+    },
+    {
+      "path": "src/simulation/fixture.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "4abf809c81d5bb216f5e32b50150a6ff27f861e39ac5c3ef4551ee592867b2ee"
+    },
+    {
+      "path": "src/simulation/interventions.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "2f4309f6ebb1ac6a913eeff1d975d5360ed0f04c0823f6ea9a3b120a51a8f4af"
+    },
+    {
+      "path": "src/simulation/numerics.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "c66686dbdb2a4a5600b374627e87ee64919525e0e57a58101565e7b671c265a7"
+    },
+    {
+      "path": "src/simulation/prng.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "dd9a7858a353de00e4d3762e3e018cabe4f70c4daea9586a417c892e4fef330b"
+    },
+    {
+      "path": "src/simulation/real.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "22af99033c3fb498dee3dc91081226fcbb048c837cfb67d9ad5a906850506639"
+    },
+    {
+      "path": "src/simulation/state.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "77cdf90891f7f20ef4ccc085a43fac269a4369cef69e47a9c999a028c6350b7c"
+    },
+    {
+      "path": "src/simulation/world.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "5754adb0cf34c125072f562357b3f6a4b748d900b30eea50d0f5d2b9a8a44b38"
+    },
+    {
+      "path": "src/worker-protocol/experiment.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "97ee999e5d10601ec4876c4fecb945630fead0b02f81587ec14b0175a23d5705"
+    },
+    {
+      "path": "src/worker-protocol/host.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "21f9bdac5ed8e9fa3618f6d86cac6084389ef22cf555efdd00b50968c7c1b578"
+    },
+    {
+      "path": "src/worker-protocol/host.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "230f631da00f9944c8d05acb308e3e1c40d244d45ef3e67af694d794e4ebb79f"
+    },
+    {
+      "path": "src/worker-protocol/persistence.test.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "3cb656267f3ce3b7a3307d2304ebc7fd4b6fb857c7add3737df673b44d6755b6"
+    },
+    {
+      "path": "src/worker-protocol/protocol.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "d8c9840924835d48e5ec27a35ebad227efb21b891ddcb031559d2b6f55be2ddf"
+    },
+    {
+      "path": "src/worker-protocol/simulation.worker.ts",
+      "purpose": "Unchanged product source or numerical/unit test",
+      "sha256": "9d2ec1cfe81c9a1c9d0df8fe96cb15416c227040a1503dfbe3e6ad3a925b4aed"
+    },
+    {
+      "path": "tests/browser-smoke/local-record.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "55c73ea4fe4e2496e17168c383abfeff4ddca7ce0b3a5d6a7d6d50ada9754469"
+    },
+    {
+      "path": "tests/e2e/a11y.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "c4511b4b63f0fd78084b212a80afc9ebc138438bac9c3c72133b6dd220508ba1"
+    },
+    {
+      "path": "tests/e2e/accessibility.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "1d5a6e7019d51a8749f153a1568bad267a652aa0b5b2ef01bd24abb2538602b1"
+    },
+    {
+      "path": "tests/e2e/command-activation-probe.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "493b8b0c5506e63d4015c88195bf51fe6b3fbca08c92b2199f32c517ebf92185"
+    },
+    {
+      "path": "tests/e2e/command-activation.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "ef1f15d9172b8c0e7a606c7bd0e5fcb934d0e43e67b0c77c01176d2f7c988a0c"
+    },
+    {
+      "path": "tests/e2e/full-rollout.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "c9ddfba5e4d756c7f8969d98a5711b1acefbd057af9a7426364c95c1e4712444"
+    },
+    {
+      "path": "tests/e2e/guide-cancel.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "5bab1890ad6d53772a72bdbb2ddd9dd15f2b679daca8244c7de9e072c04dbd53"
+    },
+    {
+      "path": "tests/e2e/lab.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "4057db13b8eda05202f7d82750d76732dce6becd45a019d5a9788e79e28b2f25"
+    },
+    {
+      "path": "tests/e2e/library-actions.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "9f0681d8e598fef23dc416ab7c782511a3069f6dd62a5d98b1a8aeb085728f64"
+    },
+    {
+      "path": "tests/e2e/library-transactions.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "53829248a457079f6a00e6098611376e0b9a06b1909453d3d9635ce01590b6af"
+    },
+    {
+      "path": "tests/e2e/persistence.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "20aa0a9365d0e08c9cfcc0efe90f7ad6fa290ce19071eae22fb57f4bb7b1ab30"
+    },
+    {
+      "path": "tests/e2e/resources.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "347bdea24427817b3cbed0d7a70138789c318d62b862afc6dd485df5546a46d9"
+    },
+    {
+      "path": "tests/e2e/stage3.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "8a7cc6d687fed28662127ac2ff28025e9e3d2860ec4f404d596ec1e70185ec94"
+    },
+    {
+      "path": "tests/e2e/storage-faults.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "048a6be76d1bb00c630745e0abfce4e77c0582847635ca04497ccde1bc3d3e03"
+    },
+    {
+      "path": "tests/e2e/visual-slice.spec.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "559d984858c74306575c1efe2d1a733aa2ee3c53ed57289f85caa3aa81f50cbf"
+    },
+    {
+      "path": "tests/evidence-path.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper"
+    },
+    {
+      "path": "tests/r3-matrix-probe.ts",
+      "purpose": "Existing browser/protocol test input or output-only helper",
+      "sha256": "125954175c09d03d9febb19447087371667c19e79ba80338e34564b144f78742"
+    },
+    {
+      "path": "tsconfig.json",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "59641e2ce6059d57c3626fd29a2a7c19bf0f02bcb169e39305d7f1294c92283c"
+    },
+    {
+      "path": "tsconfig.simulation.json",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "188fdef8b07b1bcdcad21228e628932885ab6ee8633a6dd42bcad96ee7123bee"
+    },
+    {
+      "path": "vite.config.ts",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "4d4187b20df946e2039e06df5dc1603af4c1c50932adb56686fd9fd83a0b9388"
+    },
+    {
+      "path": "vitest.config.ts",
+      "purpose": "Build/dependency/test configuration",
+      "sha256": "6f41e87c6c5e820078ef1a21512f2fe06ab807170fba459c2193dcebb2802ee7"
+    },
+    {
+      "path": "Dockerfile",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": ".dockerignore",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "deploy/toolchain.json",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "scripts/exact-toolchain.mjs",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "scripts/bootstrap-pnpm.mjs",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "scripts/container-build.mjs",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "scripts/container-smoke.mjs",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "scripts/deployment.test.mjs",
+      "purpose": "Local container build, exact toolchain and narrow runtime verification"
+    },
+    {
+      "path": "docs/deployment.md",
+      "purpose": "Local container commands and pending deployment/rollback decisions"
+    },
+    {
+      "path": "playwright.runtime.config.mjs",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "scripts/runtime-browser.mjs",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "scripts/release-payload.mjs",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "scripts/release-payload.test.mjs",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "deploy/runtime.Dockerfile",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "docs/release-pair.md",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "tests/e2e/pending-focus.spec.ts",
+      "purpose": "R1 pending focus regression and bounded public release pair verification"
+    },
+    {
+      "path": "scripts/runtime-save.mjs",
+      "purpose": "R1 isolated Save contract and two-way runtime transition verification"
+    },
+    {
+      "path": "scripts/runtime-perf-probe.mjs",
+      "purpose": "R1 isolated Save contract and two-way runtime transition verification"
+    },
+    {
+      "path": "scripts/runtime-transition.mjs",
+      "purpose": "R1 isolated Save contract and two-way runtime transition verification"
+    },
+    {
+      "path": "scripts/release-budget.test.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "scripts/save-evidence.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "scripts/save-evidence.test.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "scripts/save-observer.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "scripts/save-file-validator-source.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "scripts/closeout-running-save.mjs",
+      "purpose": "F01/H01 narrow build-time budget and test-only named Save evidence verification"
+    },
+    {
+      "path": "LICENSE",
+      "purpose": "Approved MIT grant and versioned runtime provenance notices; previous URLs remain immutable"
+    },
+    {
+      "path": "public/licenses/flyfork-aecfb06b6a1d.txt",
+      "purpose": "Approved MIT grant and versioned runtime provenance notices; previous URLs remain immutable"
+    },
+    {
+      "path": "public/licenses/provenance-bd644bc73482.txt",
+      "purpose": "Approved MIT grant and versioned runtime provenance notices; previous URLs remain immutable"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "scripts/publish-pair.py",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "scripts/release-gate.py",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "scripts/release-gate.test.py",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "deploy/compose.yml",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "deploy/release-inputs.json",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "docs/native-redistribution.md",
+      "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    }
+  ]
+}

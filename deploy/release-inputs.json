@@ -1,0 +1,22 @@
+{
+  "release": "v0.1.0-preview.1",
+  "builder": "node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
+  "previousManifestSha256": "11bb8734e76ef17bb5dd568ac8e9f17784c7c1a438603e86876f08fbff796acb",
+  "assets": [
+    {
+      "name": "previous-own-generation.tar.gz",
+      "directory": "previous",
+      "sha256": "a2f28736e18080a0cbb31a4acc67c497989805d49ce6c9ee5acb3cc48bd5154e"
+    },
+    {
+      "name": "native-notices.tar.gz",
+      "directory": "notices",
+      "sha256": "6268f380c599e5bd3d6487a59022b454c7fbd9e51cf213254a43db79ea078e71"
+    }
+  ],
+  "nativeCorrespondingSource": {
+    "url": "https://github.com/gorkemio/flyfork/releases/download/v0.1.0-preview.1/native-corresponding-source.tar.gz",
+    "bytes": 267008528,
+    "sha256": "cf4d52b0c98f050c60674804a92ce78f640ecb5f8efab4eaf50b99e0e7987a9c"
+  }
+}

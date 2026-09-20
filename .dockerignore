@@ -1,0 +1,19 @@
+**/node_modules
+**/.pnpm-store
+artifacts
+dist
+.tools
+.agents
+.codex
+.git
+**/.env*
+data/raw
+**/__pycache__
+**/*.pyc
+**/*.log
+**/*.zip
+**/*.cpuprofile
+# Keep the one required generated test fixture, not other private evidence.
+docs/evidence/**
+!docs/evidence/stage-4/
+!docs/evidence/stage-4/round-trip.flyfork.json

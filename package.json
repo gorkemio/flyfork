@@ -1,0 +1,58 @@
+{
+  "name": "flyfork",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/verify.mjs build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "node scripts/verify.mjs typecheck",
+    "lint": "node scripts/verify.mjs lint",
+    "test:unit": "node scripts/verify.mjs unit",
+    "test:coverage": "node scripts/verify.mjs coverage",
+    "test:e2e": "node scripts/verify.mjs e2e",
+    "test:e2e:webkit": "node scripts/verify.mjs e2e-webkit",
+    "test:e2e:firefox": "node scripts/verify.mjs e2e-firefox",
+    "test:smoke": "node scripts/verify.mjs smoke",
+    "test:tooling": "node scripts/verify.mjs tooling",
+    "source:pack": "node scripts/verify.mjs package",
+    "source:check": "node scripts/verify.mjs package-check"
+  },
+  "dependencies": {
+    "dexie": "4.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "@vitest/coverage-v8": "5.0.1",
+    "eslint": "10.11.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.0",
+    "vite": "8.3.0",
+    "vitest": "5.0.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gorkemio/flyfork.git"
+  },
+  "homepage": "https://flyfork.org",
+  "bugs": {
+    "url": "https://github.com/gorkemio/flyfork/issues"
+  }
+}

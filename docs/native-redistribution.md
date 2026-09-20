@@ -1,0 +1,11 @@
+# Native runtime redistribution
+
+The AMD64 runtime inherits70 packages from the pinned Nginx unprivileged/Alpine base. FlyFork changes no native executable. These packages retain their own licenses; MIT covers original FlyFork code only.
+
+The release supplies [native-corresponding-source.tar.gz](https://github.com/gorkemio/flyfork/releases/download/v0.1.0-preview.1/native-corresponding-source.tar.gz), SHA256 `cf4d52b0c98f050c60674804a92ce78f640ecb5f8efab4eaf50b99e0e7987a9c`. It contains53 pinned Alpine origins, each exact APKBUILD and local patches/configuration, its checksummed upstream archives, actual installed package inventory, acquisition records, source/license texts and build instructions. These are supplied source bytes, not a time-limited promise or a generic upstream link. Nginx vendor COPYRIGHTs remain present in the image and companion notices.
+
+The libyuv recipe deliberately ignores unstable archive timestamps and validates sorted file contents: that exact SHA512 passed. The initial generic archive-check mismatch is retained in the source acquisition record and explicitly resolved by the pinned recipe's own content verification. Alpine release metadata is generated entirely by the included alpine-base recipe. Other source archives and local inputs match the original SHA512 lists.
+
+Each runtime image includes `/usr/share/licenses/flyfork-native/` with package identities, extracted license/notice texts and a pointer to the actual corresponding-source companion. Original archives preserve additional nested notices. Dynamically linked libraries can be replaced in a rebuilt image; there is no installation key or signature restriction. The unchanged source recipes provide compilation, patches, configuration and subpackage installation steps for Alpine v3.24 x86_64. Build dependencies are declared in those recipes.
+
+[Committed release inputs](../deploy/release-inputs.json) pin the notice archive and previous own-generation. For later base updates, prepare the matching native sources/notices before publishing the changed binaries; do not silently reuse this companion for a different package inventory. Feed-based advisory review is limited to known metadata and is not a guarantee against unknown vulnerabilities.

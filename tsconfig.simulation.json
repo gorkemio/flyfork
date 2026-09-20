@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"lib":["ES2022"],"types":[]},"include":["src/simulation/**/*.ts","src/experiments/**/*.ts","src/metrics/**/*.ts"],"exclude":["src/**/*.test.ts"]}

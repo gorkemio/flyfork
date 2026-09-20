@@ -1,0 +1,7 @@
+Concrete Floor 02 — Rob Tuytel / Poly Haven
+CC0 1.0 Universal
+https://polyhaven.com/a/concrete_floor_02
+https://polyhaven.com/license
+https://creativecommons.org/publicdomain/zero/1.0/
+Derived 512px JPEG maps. Color: 72% authored epoxy pigment; roughness: 70% coat blend; OpenGL normal resampled.
+Original hashes and exact conversion are in the adjacent provenance.json.

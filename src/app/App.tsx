@@ -1,0 +1,65 @@
+import { useState, useSyncExternalStore } from 'react';
+import { useLab } from './use-lab';
+import { CircuitPanel } from './CircuitPanel';
+import { MetricsPanel } from './MetricsPanel';
+import { InterventionPanel } from './InterventionPanel';
+import { Arena } from '../rendering/Arena';
+import type { BranchId } from '../experiments/events';
+import type { Action } from '../worker-protocol/protocol';
+import { useWorkspace } from './use-workspace';
+import { WorkspaceDialogs } from './WorkspaceDialogs';
+import { EventSummary } from './EventSummary';
+import { WorkspaceToolbar } from './WorkspaceToolbar';
+function Logo() { return <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32 20 19 32 32M20 19 24 6"/><circle cx="8" cy="32" r="4"/><circle cx="20" cy="19" r="4"/><circle cx="32" cy="32" r="4"/><circle cx="24" cy="6" r="4"/></svg>; }
+const ids: BranchId[] = ['original', 'A', 'B'], labels = ['Original', 'Fork A', 'Fork B'];
+const narrowScreen = () => window.matchMedia('(max-width: 767px)').matches;
+function subscribeNarrowScreen(update: () => void) {
+    const query = window.matchMedia('(max-width: 767px)');
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+}
+export function App() {
+    const lab = useLab(), ws = useWorkspace(lab);
+    const narrow = useSyncExternalStore(subscribeNarrowScreen, narrowScreen);
+    const { view, busy, error, feed } = lab;
+    const send = (action: Action, trigger?: HTMLElement) => { void ws.sendControl(action, trigger); };
+    const [branch, setBranch] = useState<BranchId>('original'), [showTrail, setShowTrail] = useState(true), [renderEnabled, setRenderEnabled] = useState(true), [speed, setSpeed] = useState<.5 | 1 | 2 | 4>(1), [seekSeconds, setSeekSeconds] = useState(0);
+    const views = [view?.original, view?.branch, view?.branchB], current = views[ids.indexOf(branch)] ?? null;
+    const running = view?.running ?? false, ready = Boolean(view) && !busy && !lab.failed && !ws.io && !ws.guideBusy, paused = ws.controlsReady && !running;
+    const tick = view?.original.tick ?? 0, seconds = tick / 10000, horizon = Math.max(10, Math.ceil(Math.max(view?.highWater ?? 0, ...(view?.events.map(e => e.endTick) ?? [0])) / 100000) * 10), fork = view?.snapshot?.tick;
+    const seekTick = Math.round(seekSeconds * 10000), seekValid = Number.isFinite(seekTick) && seekTick >= 0 && seekTick <= (view?.highWater ?? 0);
+    const editor = <div key="editor" className="intervention-column"><details className="intervention-drawer" open><summary>Intervention editor · not applied</summary><InterventionPanel key={lab.generation} view={view} paused={paused} pending={ws.controlPending} send={send}/></details><details className="circuit-details" open><summary>Selected circuit & model</summary><CircuitPanel telemetry={current} dataset={view?.dataset}/></details></div>;
+    const arenas = <section key="arenas" className={`arenas selected-${branch}`} aria-label="Three branch simulation arenas">
+                    <div className="shared-viewport"><Arena feed={feed} branch={branch} showTrail={showTrail} enabled={renderEnabled}/></div>
+                    <div className="arena-windows">{ids.map((id, i) => {
+            const t = views[i];
+            return <section key={id} className={`branch-window window-${id}`} aria-label={`${labels[i]} arena`} data-branch={id} data-tick={t?.tick ?? ''} data-x={t?.body.x ?? ''} data-y={t?.body.y ?? ''}>
+                        <header><span className="branch-glyph" aria-hidden="true">{i === 0 ? '◉' : '⑂'}</span><div><h2>{labels[i]}</h2><EventSummary view={view} branch={id}/></div><code>{t ? `${(t.tick / 10000).toFixed(3)} s` : '—'}</code></header>
+                        {!t && <div className="branch-empty"><span>⑂</span><h3>{fork !== undefined ? 'Create forks from S₀' : 'A future begins at S₀'}</h3><p>{fork !== undefined && tick < fork ? 'Shared history · this branch does not exist yet.' : 'Capture a full state, then fork A + B.'}</p></div>}
+                        <footer><span>{i === 0 ? '━━' : i === 1 ? '┄┄' : '···'} 40 × 80 u</span><code>{t ? `x ${t.body.x.toFixed(2)} · y ${t.body.y.toFixed(2)}` : 'Not created'}</code></footer>
+                    </section>;
+        })}</div>
+                </section>;
+    const metrics = <MetricsPanel key="metrics" view={view} current={current} selected={branch}/>;
+    const transport = <section key="transport" className="panel transport" aria-label="Experiment controls"><div className="control-row"><div className="primary-controls">
+                <button className="button primary" aria-label={running ? 'Pause' : tick ? 'Resume' : 'Start'} disabled={!ws.controlsReady || tick >= 1200000} aria-disabled={ws.controlPending || undefined} onClick={event => send(running ? { type: 'PAUSE', payload: {} } : { type: 'RUN', payload: { speed } }, event.currentTarget)}>{running ? 'Ⅱ Pause' : tick ? '▷ Resume' : '▷ Start'}</button>
+                <button className="button" disabled={!paused || Boolean(view?.snapshot)} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'SNAPSHOT', payload: {} }, event.currentTarget)}>Capture snapshot</button>
+                <button className="button fork-button" disabled={!paused || !view?.snapshot || view.forkTick !== null} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'FORK', payload: {} }, event.currentTarget)}>Fork A + B</button>
+                <button className="button subtle" disabled={!paused || !view?.snapshot} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'RESTORE', payload: {} }, event.currentTarget)}>Restore S₀</button>
+                <button className="button subtle" disabled={!paused || tick > 1190000} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'STEP', payload: { ticks: 10000 } }, event.currentTarget)}>+1 s</button>
+                <button className="button subtle" disabled={!paused || tick > 1150000} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'STEP', payload: { ticks: 50000 } }, event.currentTarget)}>+5 s</button>
+                <button className="button subtle" disabled={!paused || !view?.branch} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'COMPARE', payload: {} }, event.currentTarget)}>Compare states</button>
+                <button className="button subtle" disabled={!paused || !view?.branch || tick === (fork ?? 0)} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'REPLAY', payload: {} }, event.currentTarget)}>Replay check</button>
+            </div><div className="render-controls"><label><input type="checkbox" checked={showTrail} onChange={e => setShowTrail(e.target.checked)}/>Motion trail</label><label><input type="checkbox" checked={renderEnabled} onChange={e => setRenderEnabled(e.target.checked)}/>Render</label><label>Speed<select aria-label="Simulation speed" value={speed} disabled={busy || running} onChange={e => setSpeed(Number(e.target.value) as typeof speed)}>{[.5, 1, 2, 4].map(s => <option key={s} value={s}>{s}×</option>)}</select></label></div></div>
+                <div className="experiment-timeline"><div className="time-readout"><span>VIEWING TIME</span><strong data-testid="model-time">{seconds.toFixed(3)} s</strong><small data-testid="recorded-frontier">Recorded to {((view?.highWater ?? 0) / 10000).toFixed(3)} s</small></div><div className="timeline-lanes"><div className="timeline-caption"><span>Recorded history</span><span>Shaded bands · applied events</span></div>{ids.map((id, i) => <div className={`timeline-lane lane-${id}`} key={id}><span>{labels[i]}</span><div className="lane-track"><i className="history-line" style={{ left: `${i === 0 ? 0 : (fork ?? 0) / 10000 / horizon * 100}%`, width: `${Math.max(0, ((view?.highWater ?? 0) / 10000 - (i === 0 ? 0 : (fork ?? tick) / 10000)) / horizon * 100)}%` }}/>{view?.events.filter(e => e.branch === id).map(e => <i className="event-band" key={e.id} title={`${e.operation} ${e.magnitude}: ${e.startTick / 10000}–${e.endTick / 10000} s`} style={{ left: `${e.startTick / 10000 / horizon * 100}%`, width: `${(e.endTick - e.startTick) / 10000 / horizon * 100}%` }}/>)}<i className="common-cursor" title={`Viewing ${(tick / 10000).toFixed(3)} s`} style={{ left: `${seconds / horizon * 100}%` }}/>{fork !== undefined && <i className="s0-cursor" title={`S₀ ${fork / 10000} s`} style={{ left: `${fork / 10000 / horizon * 100}%` }}/>}</div></div>)}<div className="axis">{fork !== undefined && <span className="axis-fork" style={{ left: `${fork / 10000 / horizon * 100}%` }}>S₀ {(fork / 10000).toFixed(2)} s</span>}<span>0 s</span><span>{horizon / 2} s</span><span>{horizon} s</span></div></div><div className="seek-control"><label>Seek time (s)<input aria-label="Seek time seconds" type="number" min="0" max={(view?.highWater ?? 0) / 10000} step="0.1" value={Number.isNaN(seekSeconds) ? '' : seekSeconds} onChange={e => setSeekSeconds(e.target.value === '' ? NaN : Number(e.target.value))}/></label><button className="button" disabled={!paused || !seekValid} aria-disabled={ws.controlPending || undefined} onClick={event => send({ type: 'SEEK', payload: { tick: seekTick } }, event.currentTarget)}>Seek</button><input aria-label="Timeline seek" type="range" min="0" max={(view?.highWater ?? 0) / 10000} step="0.0001" value={Number.isFinite(seekSeconds) ? seekSeconds : 0} onChange={e => setSeekSeconds(Number(e.target.value))}/></div></div>
+                <div className="workflow-hint" role={busy ? "progressbar" : "status"} aria-label={busy ? "Simulation operation" : undefined} aria-valuenow={busy ? view?.job?.progress : undefined} aria-valuemax={busy ? view?.job?.target : undefined}>{ws.controlStatus && <span data-testid="control-status" role="status">{ws.controlStatus}{ws.controlPhase === 'waiting' && <button ref={ws.controlCancel} className="button subtle" onClick={ws.cancelControl}>Cancel pending command</button>}</span>}{error ? <span role="alert" className="error-text">{error}</span> : ws.controlStatus ? null : busy ? view?.job ? `Computing ${view.job.type} · ${(view.job.progress / 10000).toFixed(2)} / ${(view.job.target / 10000).toFixed(2)} s` : 'Applying command at a safe tick boundary…' : view?.replay.status === 'Matched' ? 'Replay matched each branch’s own history. Different branch outcomes are valid.' : view?.branch ? 'Pause to apply drafts at the recorded present; Compare and Replay answer different questions.' : 'Start → pause → capture S₀ → fork A + B. One fork point per experiment.'}</div>
+            </section>;
+    return <div className="app-shell stage3 stage4 stage45">
+        <header className="topbar"><div className="brand"><Logo /><span>FlyFork</span></div><WorkspaceToolbar ws={ws} lab={lab} ready={ready}/></header>
+        <main>
+        <div className="workspace-heading"><h1>One state. Different futures.</h1><div className="branch-tabs" role="group" aria-label="PN inspector and narrow-screen arena"><span className="inspector-label">Inspect PN / view</span>{ids.map((id, i) => <button key={id} aria-pressed={branch === id} disabled={id !== 'original' && !views[i]} onClick={() => setBranch(id)}><i className={`dot ${['amber', 'cyan', 'violet'][i]}`}/>{labels[i]}</button>)}</div><div className="experiment-meta"><span className="pill">{view?.dataset.title ?? 'Loading dataset'}</span><span>SEED <code>{view?.seed ?? 42}</code></span><span className="run-state" data-running={running} data-testid="run-status">{!view ? 'Initializing' : view.job ? 'Computing' : running ? 'Running' : tick ? 'Paused' : 'Ready'}</span></div></div>
+            <div className="lab-grid">{narrow ? [arenas, transport, editor, metrics] : [editor, arenas, metrics, transport]}</div>
+            <div className="durable-status"><span role="status">{ws.problem || ws.notice || ws.storageMessage}</span>{!ws.storageMessage.startsWith('Local Library') && !ws.storageMessage.startsWith('Opening') && <span role="status">{ws.storageMessage}</span>}<span>{ws.recovery?.entry ? `Last durable recovery: view ${(ws.recovery.entry.playhead / 10000).toFixed(2)} s / recorded ${(ws.recovery.entry.frontier / 10000).toFixed(2)} s` : 'No durable recovery yet.'} {!ws.recoveryOwned && 'Automatic recovery unavailable here or owned by another tab.'}</span>{lab.failed && ws.recovery?.file && <button className="button" onClick={() => void ws.previewFile(ws.recovery!.file!, 'recovery')}>Review recovery</button>}</div>
+        </main><footer className="page-footer"><span>FlyFork v0.4 · Selected subgraph, engineered dynamics. Animal behavior unvalidated.</span><span>Local storage is not a cloud backup. Export important experiments. · 120 s limit</span></footer><WorkspaceDialogs ws={ws} lab={lab}/>
+    </div>;
+}

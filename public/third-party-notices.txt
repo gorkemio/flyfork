@@ -1,0 +1,67 @@
+FlyFork — source and model attribution
+
+MaleCNS v1.0, released June 8, 2026
+https://male-cns.janelia.org/download/
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Attribution: MaleCNS collaboration — FlyEM (HHMI Janelia), University of Cambridge,
+MRC Laboratory of Molecular Biology, and Google Research.
+Changes: selected all ORN_DM1, DM1_lPN and lLN2F_b cells and positive internal
+connections; added stable local indexes, per-cell NT signs and side mapping.
+Raw synapse counts retained. The LIF dynamics and body decoder are assumptions,
+not validated animal behavior. Exact file provenance accompanies the prepared
+package in data/prepared/male-cns-dm1.manifest.json in the source distribution.
+
+Model equations and source parameter reference:
+Philip Shiu and Nico Spiller, Drosophila_brain_model
+https://github.com/philshiu/Drosophila_brain_model
+Pinned source: 91bdd1e7dcf193f3e7ca5a8933497fcef63b7960
+FlyFork is an independent TypeScript implementation and is not a Brian2 port.
+Changes include timestep ordering, refractory handling, MaleCNS data, sensory
+encoding and an engineered PN-to-body decoder. Source license follows.
+
+MIT License
+
+Copyright (c) 2023 Philip Shiu and Nico Spiller
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Stage 4 runtime dependency: Dexie.js 4.4.6
+https://dexie.org/ — Copyright (c) 2014-2017 David Fahlander
+Unmodified Apache-2.0 LICENSE and NOTICE from the installed package:
+licenses/dexie-LICENSE.txt and licenses/dexie-NOTICE.txt
+This third-party notice does not assign a license to FlyFork itself.
+
+Additional runtime dependency notices (unmodified installed-package texts):
+React 19.3.0 — MIT — licenses/react-LICENSE.txt
+React DOM 19.3.0 — MIT — licenses/react-dom-LICENSE.txt
+scheduler 0.28.0 (React DOM dependency) — MIT — licenses/scheduler-LICENSE.txt
+Three.js 0.186.0 — MIT — licenses/three-LICENSE.txt
+Zod 4.6.5 — MIT — licenses/zod-LICENSE.txt
+
+Concrete Floor 02 — Rob Tuytel / Poly Haven — CC0-1.0
+Asset terms: assets/lab/concrete-floor-02/LICENSE.txt
+Source/derived hashes and conversion: assets/lab/concrete-floor-02/provenance.json
+
+PRNG source attribution: src/simulation/prng.ts in the source distribution
+implements xoshiro128** with a reference to
+https://prng.di.unimi.it/xoshiro128starstar.c
+The existing code comment identifies a public-domain reference; this review
+could not retrieve its current upstream text. Source-derivation/license
+confirmation remains an explicit pre-publication review item.
+
+These third-party terms do not license FlyFork's own code. Its proposed MIT
+direction and rights-holder identity remain pending final approval.

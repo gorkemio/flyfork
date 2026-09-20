@@ -1,0 +1,2287 @@
+{
+  "generatedAt": "2026-09-20T10:30:24.375353+00:00",
+  "lockfileSha256": "df634e49cfcae72fe4a1c66881788d2bcf055468cfebf5958d43b8c66f981d95",
+  "scope": "Locked dependency inventory; no dependency code is included in the source archive. Installed metadata is not a legal or vulnerability certification. Platform-specific uninstalled packages need review before distribution on that platform.",
+  "packages": [
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.13.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MPL-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "812e9d96e900a093ae4d1d3f22c5f82f568a0a0461c3007a99d00573d41c5461"
+        }
+      ]
+    },
+    {
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.8",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2e97627cb278aa7556fb9e8817368302301a595b6c7582512b8d74c57b773652"
+        }
+      ]
+    },
+    {
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+        }
+      ]
+    },
+    {
+      "name": "@bcoe/v8-coverage",
+      "version": "1.0.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "98d226d560dfbb0a07a77c3654acc18ba6c87589c48cf00cb2a9855ad50fcd07"
+        },
+        {
+          "name": "LICENSE.txt",
+          "sha256": "1a9c55b2961f5e3062e181fa55666c44d011fc3cc03ed6d4fa4321c51f2a5ec5"
+        }
+      ]
+    },
+    {
+      "name": "@cacheable/memory",
+      "version": "2.2.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+        }
+      ]
+    },
+    {
+      "name": "@cacheable/utils",
+      "version": "2.5.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+        }
+      ]
+    },
+    {
+      "name": "@dimforge/rapier3d-compat",
+      "version": "0.12.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519"
+        }
+      ]
+    },
+    {
+      "name": "@eslint-community/eslint-utils",
+      "version": "4.10.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "fcf6eabf68ca96988a6b506b4fdc6cc32535d80eb2e11c79724af5ac6f50262b"
+        }
+      ]
+    },
+    {
+      "name": "@eslint-community/regexpp",
+      "version": "4.12.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "fcf6eabf68ca96988a6b506b4fdc6cc32535d80eb2e11c79724af5ac6f50262b"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/config-array",
+      "version": "0.23.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/config-helpers",
+      "version": "0.7.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/core",
+      "version": "1.2.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/object-schema",
+      "version": "3.0.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@eslint/plugin-kit",
+      "version": "0.7.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@humanfs/core",
+      "version": "0.19.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@humanfs/node",
+      "version": "0.16.8",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": []
+    },
+    {
+      "name": "@humanwhocodes/module-importer",
+      "version": "1.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@humanwhocodes/retry",
+      "version": "0.4.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b8778b155bfde5a28b023a558753c0fa058a52bb9de35c343c250be1bbcdedab"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+        }
+      ]
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+        }
+      ]
+    },
+    {
+      "name": "@keyv/bigmap",
+      "version": "1.3.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "f18cad8d98d4454ad42c33f1950d642cd3b939f2ccd3c36710fa8f50842cacc0"
+        }
+      ]
+    },
+    {
+      "name": "@keyv/serialize",
+      "version": "1.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "1f7dca26d2d328c3dbb9b6fe3b15ec3cda08ffe2288e47b73d617454b256f959"
+        }
+      ]
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.150.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ]
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.63.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        }
+      ]
+    },
+    {
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": []
+    },
+    {
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ]
+    },
+    {
+      "name": "@tweenjs/tween.js",
+      "version": "23.1.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b"
+        }
+      ]
+    },
+    {
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/esrecurse",
+      "version": "4.3.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/json-schema",
+      "version": "7.0.15",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/node",
+      "version": "26.6.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/stats.js",
+      "version": "0.17.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/three",
+      "version": "0.186.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@types/webxr",
+      "version": "0.5.24",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/project-service",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "053a75a14b7508a897466b65e12797201a06b0e9b5066d1223da72cac99601b5"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/scope-manager",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/tsconfig-utils",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "053a75a14b7508a897466b65e12797201a06b0e9b5066d1223da72cac99601b5"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "f3c51ace7f159b21566d72535e84ff354505ae7ffdca835dac81fcdafbf9e879"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/types",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/visitor-keys",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/coverage-v8",
+      "version": "5.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/istanbul-lib-coverage",
+      "version": "1.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "77bf9ac1273b3af5c59c632e9dfad86bd1961f65d8a56c76b5fb844488b4991c"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/istanbul-lib-report",
+      "version": "1.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "77bf9ac1273b3af5c59c632e9dfad86bd1961f65d8a56c76b5fb844488b4991c"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/mocker",
+      "version": "5.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551"
+        }
+      ]
+    },
+    {
+      "name": "@vitest/spy",
+      "version": "5.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551"
+        }
+      ]
+    },
+    {
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "cfa72b62b9ae173078823a3796b25c027a9071046a263beddf966df67018ce06"
+        }
+      ]
+    },
+    {
+      "name": "acorn",
+      "version": "8.18.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7"
+        }
+      ]
+    },
+    {
+      "name": "ajv",
+      "version": "6.15.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "e85e131fa4ed25538ff1f4962ced1fb6f68b079bd9164a790597a0f30b8fd030"
+        }
+      ]
+    },
+    {
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2130216d5ab4c02134f8247f32999feda0abe1eaf028218baeac445c19ce4cea"
+        }
+      ]
+    },
+    {
+      "name": "ast-v8-to-istanbul",
+      "version": "1.0.6",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "7771f0b6f55e76efe99cb8e6fdbff583193c9bdfd74d41620d330cc3db6b913a"
+        }
+      ]
+    },
+    {
+      "name": "axe-core",
+      "version": "4.13.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MPL-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "af175b9d96ee93c21a036152e1b905b0b95304d4ae8c2c921c7609100ba8df7e"
+        },
+        {
+          "name": "LICENSE-3RD-PARTY.txt",
+          "sha256": "4f8563870d0fca38bbc3e00b6f670cb7fa9f380ba9f26a7f7d1184a6b18b1653"
+        }
+      ]
+    },
+    {
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "d408f38ffa3355c5faec517153295338892eb0f1ea43f57874bb23c6075979b5"
+        }
+      ]
+    },
+    {
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "9c63a23124d68cd30cd316a94a1a0bca34f032786df6df69fc4b5f136bac8d2e"
+        }
+      ]
+    },
+    {
+      "name": "cacheable",
+      "version": "2.5.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+        }
+      ]
+    },
+    {
+      "name": "chai",
+      "version": "6.2.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b181da80336ff9dd1043fc8be1a764d7382363433319aa872e4d2cb5ce2a3066"
+        }
+      ]
+    },
+    {
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "aaa78451b6fecd1b9c4594c796c133c0e90cad100372ff8bc6de615e9ef9adf1"
+        }
+      ]
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+        }
+      ]
+    },
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+        }
+      ]
+    },
+    {
+      "name": "deep-is",
+      "version": "0.1.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "f2042f3634c4136d06b5139c9c6aefb81a3a462b514548bc1845953233dfba98"
+        }
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ]
+    },
+    {
+      "name": "dexie",
+      "version": "4.4.6",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+        }
+      ]
+    },
+    {
+      "name": "es-module-lexer",
+      "version": "2.3.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "8a4b6c44eebfb026d23719a348145a661a555568dbfdc11618ff2d0dd9306b00"
+        }
+      ]
+    },
+    {
+      "name": "escape-string-regexp",
+      "version": "4.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "eslint-scope",
+      "version": "9.1.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "d3a724e2ed749f172ff70b62a1d0631b7d4b0ea273782365a3464d4e2d6b6dbd"
+        }
+      ]
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+        }
+      ]
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+        }
+      ]
+    },
+    {
+      "name": "eslint",
+      "version": "10.11.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c"
+        }
+      ]
+    },
+    {
+      "name": "espree",
+      "version": "11.2.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "26c95937762a3dc17a3934a0a2773c70259ba4bf28dab713c225e4af8eb9d349"
+        }
+      ]
+    },
+    {
+      "name": "esquery",
+      "version": "1.7.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-3-Clause",
+      "licenseFiles": [
+        {
+          "name": "license.txt",
+          "sha256": "ac68116ae73740de4190892f334992e449a124600924ec761e64319d3aac9e6e"
+        }
+      ]
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": []
+    },
+    {
+      "name": "estraverse",
+      "version": "5.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.BSD",
+          "sha256": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1"
+        }
+      ]
+    },
+    {
+      "name": "estree-walker",
+      "version": "3.0.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "8a6dcbabe7179f9c8489c08a7d874d0f1e093ae7449e03756ccf87cb9d0e296e"
+        }
+      ]
+    },
+    {
+      "name": "esutils",
+      "version": "2.0.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.BSD",
+          "sha256": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1"
+        }
+      ]
+    },
+    {
+      "name": "expect-type",
+      "version": "1.4.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "7c6cc83c84eaa249a85bf12fe3eedd831bb50c696e8890b5248223ae68c7b408"
+        }
+      ]
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+        }
+      ]
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
+        }
+      ]
+    },
+    {
+      "name": "fast-levenshtein",
+      "version": "2.0.6",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "942a98cb8846a6354266193f173c1354615827fbb7d67f68399599dff12c4d6a"
+        }
+      ]
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ]
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+        }
+      ]
+    },
+    {
+      "name": "file-entry-cache",
+      "version": "11.1.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+        }
+      ]
+    },
+    {
+      "name": "find-up",
+      "version": "5.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "flat-cache",
+      "version": "6.1.23",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+        }
+      ]
+    },
+    {
+      "name": "flatted",
+      "version": "3.4.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "148718606d34f467fd08a2176bb4c1ab275f999576f779368503d8d3e3642861"
+        }
+      ]
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2a8a5d6197bb97a018b8a190dd3ed853d750ca87c8e80c17aad41d6c6ff448e1"
+        }
+      ]
+    },
+    {
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "fc68eb8f1c8e1d6b8be50f3c177927e24791cae7dc251e6253a012f37926a30c"
+        }
+      ]
+    },
+    {
+      "name": "hashery",
+      "version": "1.5.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eef776efe4bae7fcd2d8162ecadf2b0873aae20afac343a936ddb0de3d79253"
+        }
+      ]
+    },
+    {
+      "name": "hookified",
+      "version": "1.15.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+        }
+      ]
+    },
+    {
+      "name": "hookified",
+      "version": "2.2.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+        }
+      ]
+    },
+    {
+      "name": "ignore",
+      "version": "5.3.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "9c94db23dc4b1e9aaee5d195668b916afc71efed54af226b66cf0ccc4389c1c0"
+        }
+      ]
+    },
+    {
+      "name": "ignore",
+      "version": "7.0.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE-MIT",
+          "sha256": "9c94db23dc4b1e9aaee5d195668b916afc71efed54af226b66cf0ccc4389c1c0"
+        }
+      ]
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": []
+    },
+    {
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "73b5283588baa142c5baaef5f56d3e8fdea7a30b214e8c5737e87640f882453a"
+        }
+      ]
+    },
+    {
+      "name": "is-glob",
+      "version": "4.0.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "4cd903859549d4b20b571041f96dfae1136ed079c476126268f9d7cc1b611150"
+        }
+      ]
+    },
+    {
+      "name": "isexe",
+      "version": "2.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ]
+    },
+    {
+      "name": "js-tokens",
+      "version": "10.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3b07ef3fdd96c7f4025deb20139ec92b3fb88d3988b98047d9beee10b659f47b"
+        }
+      ]
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "0.4.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+        }
+      ]
+    },
+    {
+      "name": "json-stable-stringify-without-jsonify",
+      "version": "1.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+        }
+      ]
+    },
+    {
+      "name": "keyv",
+      "version": "5.6.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "1f7dca26d2d328c3dbb9b6fe3b15ec3cda08ffe2288e47b73d617454b256f959"
+        }
+      ]
+    },
+    {
+      "name": "levn",
+      "version": "0.4.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+        }
+      ]
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MPL-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "LOCK_ONLY_NOT_INSTALLED_ON_THIS_HOST"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MPL-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ]
+    },
+    {
+      "name": "locate-path",
+      "version": "6.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "magic-string",
+      "version": "1.4.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "1cbe51b907662f6cb1492b16c359384a595180bf0e4d101603ed525e75c4e484"
+        }
+      ]
+    },
+    {
+      "name": "magicast",
+      "version": "0.5.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "7917b04272f3f7c11f9fb89716742747a77f5906ebe5a81e70cbd090b8c7f961"
+        }
+      ]
+    },
+    {
+      "name": "meshoptimizer",
+      "version": "1.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+        }
+      ]
+    },
+    {
+      "name": "minimatch",
+      "version": "10.2.6",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BlueOak-1.0.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "2c7c5d22ed5a8ee968c64757710979afcd77438c48b4a265b94e615babd8a901"
+        }
+      ]
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license.md",
+          "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.19",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ]
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": []
+    },
+    {
+      "name": "obug",
+      "version": "2.2.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "ee48679d379ca6b4493d5e231094d85f818dd9be40b1a4f234fb7ff657ee35d9"
+        }
+      ]
+    },
+    {
+      "name": "optionator",
+      "version": "0.9.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+        }
+      ]
+    },
+    {
+      "name": "p-limit",
+      "version": "3.1.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "p-locate",
+      "version": "5.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "path-exists",
+      "version": "4.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ]
+    },
+    {
+      "name": "path-key",
+      "version": "3.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ]
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ]
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.63.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        }
+      ]
+    },
+    {
+      "name": "playwright",
+      "version": "1.63.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.28",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ]
+    },
+    {
+      "name": "prelude-ls",
+      "version": "1.2.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+        }
+      ]
+    },
+    {
+      "name": "punycode",
+      "version": "2.3.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE-MIT.txt",
+          "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a"
+        }
+      ]
+    },
+    {
+      "name": "qified",
+      "version": "0.10.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+        }
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.9",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        }
+      ]
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.8.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ]
+    },
+    {
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "69dee148a2cc470554dfa7142e830662062394d0fe67cddd379aba90dc60d6b3"
+        }
+      ]
+    },
+    {
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ]
+    },
+    {
+      "name": "siginfo",
+      "version": "2.0.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3bdddf0b9b08aaa2fe4365b803fc958ed32c0597ca0bd727be8d9fcb8b248d18"
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-3-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ]
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": []
+    },
+    {
+      "name": "std-env",
+      "version": "4.2.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENCE",
+          "sha256": "a6f36438e46fb911859f3b9c4cad045ba64e1af3d8f4512c60258fa2d7552d28"
+        }
+      ]
+    },
+    {
+      "name": "three",
+      "version": "0.186.0",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        }
+      ]
+    },
+    {
+      "name": "tinybench",
+      "version": "6.1.4",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "cebc084d54e6dd99e53292ddb4bc1cdb63d9bfcd9ce438fe3aa6eb106d79e2ea"
+        }
+      ]
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "f95f668fe64081ddb4153b322e34fdd719b991285ed08177d5ad7133b7988d92"
+        }
+      ]
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ]
+    },
+    {
+      "name": "tinyrainbow",
+      "version": "3.1.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENCE",
+          "sha256": "cebc084d54e6dd99e53292ddb4bc1cdb63d9bfcd9ce438fe3aa6eb106d79e2ea"
+        }
+      ]
+    },
+    {
+      "name": "ts-api-utils",
+      "version": "2.5.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "76c9d5f5ea942054715c026f33f8717c9e24603196a3737b8899afa216bcbdab"
+        }
+      ]
+    },
+    {
+      "name": "type-check",
+      "version": "0.4.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+        }
+      ]
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.70.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+        }
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "Apache-2.0",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.txt",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        }
+      ]
+    },
+    {
+      "name": "undici-types",
+      "version": "8.9.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27"
+        }
+      ]
+    },
+    {
+      "name": "uri-js",
+      "version": "4.4.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "BSD-2-Clause",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "0af366eff4c01ec147c9c61ea9e8ffad64a4294754c9d79355f3fd1b97cb2fb9"
+        }
+      ]
+    },
+    {
+      "name": "vite",
+      "version": "8.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c"
+        }
+      ]
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.1",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE.md",
+          "sha256": "d47eb4eeddb0a8b7776abd645d9c2d18e14bf6a5ffa52ac75fc3647d672d0260"
+        }
+      ]
+    },
+    {
+      "name": "which",
+      "version": "2.0.2",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "ISC",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ]
+    },
+    {
+      "name": "why-is-node-running",
+      "version": "2.3.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "6a134e51aa31496c15a741592fc5d782b2dbf8d8b6b8524e15c8520ae0cd6374"
+        }
+      ]
+    },
+    {
+      "name": "word-wrap",
+      "version": "1.2.5",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "73b5283588baa142c5baaef5f56d3e8fdea7a30b214e8c5737e87640f882453a"
+        }
+      ]
+    },
+    {
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "scope": "development/build/test (not shipped as source package contents)",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "name": "zod",
+      "version": "4.6.5",
+      "scope": "runtime",
+      "review": "INSTALLED_PACKAGE_METADATA",
+      "declaredLicense": "MIT",
+      "licenseFiles": [
+        {
+          "name": "LICENSE",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+        }
+      ]
+    }
+  ]
+}

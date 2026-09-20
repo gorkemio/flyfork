@@ -1,0 +1,2 @@
+import { defineConfig } from 'vitest/config';
+export default defineConfig({ test: { include: ['src/**/*.test.ts'], coverage: { provider: 'v8', include: ['src/simulation/**/*.ts', 'src/experiments/**/*.ts', 'src/metrics/**/*.ts', 'src/worker-protocol/**/*.ts', 'src/persistence/format.ts', 'src/persistence/recording.ts', 'src/app/lab-client.ts', 'src/app/control-intent.ts'], exclude: ['**/*.test.ts', '**/simulation.worker.ts'], reporter: ['text', 'json-summary', 'html'], thresholds: { lines: 90, branches: 85, functions: 90, statements: 90 } } } });

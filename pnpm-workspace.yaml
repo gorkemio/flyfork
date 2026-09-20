@@ -1,0 +1,7 @@
+minimumReleaseAgeExclude:
+  - '@types/node@26.6.2'
+  - eslint@10.11.0
+saveExact: true
+strictPeerDependencies: true
+storeDir: .pnpm-store
+cacheDir: .pnpm-store/cache

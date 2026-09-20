@@ -1,0 +1,35 @@
+name: Required source verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Package allowlisted source and verify in exact Linux toolchain
+        run: |
+          set -euo pipefail
+          python3 scripts/release-gate.test.py
+          python3 -m py_compile scripts/publish-pair.py
+          mkdir -p "$RUNNER_TEMP/flyfork"
+          docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/input:ro" -v "$RUNNER_TEMP/flyfork:/output" -w /input node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df node --input-type=module -e "import {createCandidate} from './scripts/source-package.mjs'; createCandidate('/input','/output/source');"
+          docker build --platform linux/amd64 --target evidence --output "type=local,dest=$RUNNER_TEMP/flyfork/linux" "$RUNNER_TEMP/flyfork/source"
+          printf '%s\n' "$GITHUB_SHA" > "$RUNNER_TEMP/flyfork/commit.txt"
+      - name: Preserve this exact build and verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verified-source-and-runtime
+          path: ${{ runner.temp }}/flyfork/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,60 @@
+{
+  "asset": "Concrete Floor 02",
+  "author": "Rob Tuytel",
+  "source": "https://polyhaven.com/a/concrete_floor_02",
+  "license": "CC0-1.0",
+  "licenseURL": "https://polyhaven.com/license",
+  "files": [
+    {
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_diff_1k.jpg",
+      "sourceBytes": 776097,
+      "sourceSha256": "6db84a6d87dc50508b9d134d6fbd2b7e876b8081a5f43a118a249ca18de73af5",
+      "sourceDimensions": [
+        1024,
+        1024
+      ],
+      "derivedFile": "epoxy_diff_512.jpg",
+      "derivedBytes": 47346,
+      "derivedSha256": "e3c7c9fa39568ae335f910f19cfba37c99307da7bc4c72c44afdeff4623be94a",
+      "derivedDimensions": [
+        512,
+        512
+      ],
+      "conversion": "Canvas2D 512px JPEG q.88; diffuse 72% #535b61 epoxy pigment; roughness 70% #e3e3e3 coat; normal resample only"
+    },
+    {
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_rough_1k.jpg",
+      "sourceBytes": 318550,
+      "sourceSha256": "c7f026a611b7859903c61ec7fd4574944157223e9e7796413dd6e2a66eaeac7a",
+      "sourceDimensions": [
+        1024,
+        1024
+      ],
+      "derivedFile": "epoxy_rough_512.jpg",
+      "derivedBytes": 17401,
+      "derivedSha256": "9eb1e37f7a552a10d0c6513b3ee2c85a7c6dc3d434b0b0aba80122b1fa605910",
+      "derivedDimensions": [
+        512,
+        512
+      ],
+      "conversion": "Canvas2D 512px JPEG q.88; diffuse 72% #535b61 epoxy pigment; roughness 70% #e3e3e3 coat; normal resample only"
+    },
+    {
+      "sourceURL": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_02/concrete_floor_02_nor_gl_1k.jpg",
+      "sourceBytes": 192757,
+      "sourceSha256": "fcda391b57a816d646ae15544688be53790478da5cd48dbe514b3c6901415e61",
+      "sourceDimensions": [
+        1024,
+        1024
+      ],
+      "derivedFile": "epoxy_nor_gl_512.jpg",
+      "derivedBytes": 35169,
+      "derivedSha256": "423ee8b0e5326d6e9e6bc26edab23ba627508cfabe04a5b35b4098a6a14e6d64",
+      "derivedDimensions": [
+        512,
+        512
+      ],
+      "conversion": "Canvas2D 512px JPEG q.88; diffuse 72% #535b61 epoxy pigment; roughness 70% #e3e3e3 coat; normal resample only"
+    }
+  ]
+}

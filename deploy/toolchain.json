@@ -1,0 +1,21 @@
+{
+  "node": "24.19.0",
+  "pnpm": "11.25.0",
+  "pnpmTarball": "https://registry.npmjs.org/pnpm/-/pnpm-11.25.0.tgz",
+  "pnpmIntegrity": "sha512-XN6SW08HX3Jetx+64YpC/+eEUkeJ8ZthxzHLhyHsKKruFg4BqNWvT+2ypCzb8wDv4j2zVrDUoXtNY+EfirfJVg==",
+  "metadataSource": "https://registry.npmjs.org/pnpm/11.25.0",
+  "verifiedOn": "2026-09-20",
+  "builder": {
+    "tag": "node:24.19.0-bookworm-slim",
+    "indexDigest": "sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
+    "linuxArm64Manifest": "sha256:be8929e08ae137e81b5e1edba02259e6c4cb2f5ad655092bb9f56b97e41c4536",
+    "source": "https://github.com/nodejs/docker-node"
+  },
+  "runtime": {
+    "tag": "nginxinc/nginx-unprivileged:1.30.5-alpine",
+    "indexDigest": "sha256:daa17b944bac2b578e962da4c61ad72a59233b3c63abea17113acaf4e6b9aea4",
+    "linuxArm64Manifest": "sha256:73295a68e76bc90691e408a8a3206db2ebdda35aebff071a756d605734b49773",
+    "nginx": "1.30.5",
+    "source": "https://github.com/nginx/docker-nginx-unprivileged"
+  }
+}

@@ -1,0 +1,45 @@
+name: Manual immutable AMD64 pair publication
+on:
+  workflow_dispatch:
+    inputs:
+      verification_run:
+        description: Successful Required source verification run ID for this exact main commit
+        required: true
+        type: string
+permissions: {}
+concurrency:
+  group: flyfork-image-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'gorkemio/flyfork' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+      packages: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERIFICATION_RUN: ${{ inputs.verification_run }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Verify provenance and download completed build (no rebuild)
+        run: python3 scripts/publish-pair.py prepare
+      - name: Authenticate ephemeral workflow token
+        run: printf '%s' "$GH_TOKEN" | docker login ghcr.io -u gorkemio --password-stdin
+      - name: Assemble both native images before pushing either immutable tag
+        run: python3 scripts/publish-pair.py publish
+      - name: Preserve registry and public payload identities
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: published-pair-identities
+          path: publication/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Remove ephemeral registry login
+        if: always()
+        run: docker logout ghcr.io

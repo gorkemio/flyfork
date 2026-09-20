@@ -1,0 +1,32 @@
+import { expect, it } from 'vitest';
+import { SimulationHost } from './host';
+import { compareStates } from '../simulation/engine';
+const metadata = { id: 'saved-test', name: 'Saved experiment', savedAt: '2026-09-19T12:00:00.000Z', runtime: 'Vitest', dataset: 'synthetic' };
+it('exports one safe tick and loads atomically; stale or failed loads cannot replace the live experiment', async () => {
+    const host = new SimulationHost();
+    let requestId = 0;
+    const command = (type: string, payload: object = {}) => ({ protocolVersion: 4, sessionId: 'worker-4', epoch: 1, requestId: ++requestId, expectedRevision: host.revision, type, payload });
+    host.handle(command('INIT', { seed: 42, dataset: 'synthetic' }));
+    host.experiment.advanceTo(20000);
+    host.handle(command('SNAPSHOT'));
+    host.handle(command('FORK'));
+    host.experiment.advanceTo(120000);
+    for (const p of host.experiment.seek(50000))
+        void p;
+    const captured = command('EXPORT_STATE', metadata), reply = await host.dispatch(captured);
+    expect(reply.file).toBeTypeOf('string');
+    expect((await host.dispatch(captured)).file).toBe(reply.file);
+    const before = host.experiment;
+    expect((await host.dispatch(command('LOAD', { file: '{}' }))).kind).toBe('ERROR');
+    expect(host.experiment).toBe(before);
+    const load = command('LOAD', { file: reply.file });
+    expect((await host.dispatch({ ...load, epoch: 0 })).kind).toBe('ERROR');
+    expect(host.experiment).toBe(before);
+    const loaded = await host.dispatch(load);
+    expect(loaded.kind).toBe('ACK');
+    expect(host.experiment).not.toBe(before);
+    expect(host.original.tick).toBe(50000);
+    expect(host.experiment.highWater).toBe(120000);
+    expect(compareStates(host.original, before.original.state).equal).toBe(true);
+    expect(host.experiment.replayStatus.status).toBe('Not checked');
+});

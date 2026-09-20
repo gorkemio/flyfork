@@ -1,0 +1,70 @@
+FlyFork experimental preview — current provenance notice
+
+FlyFork original project code: MIT, Copyright (c) 2026 Görkem İnanç Özdemir.
+The complete grant is in the accompanying flyfork-*.txt license and repository LICENSE.
+Third-party code, data, images and native image packages retain their own terms.
+This current notice supersedes pending-license/retrieval status wording in the
+retained historical third-party-notices.txt, whose URL/bytes stay unchanged for
+previous-generation compatibility. Its third-party attributions remain applicable.
+
+xoshiro128** 1.1 reference: David Blackman and Sebastiano Vigna (2018).
+FlyFork randomStream adapts the C state transition to TypeScript/32-bit operations.
+Source: https://prng.di.unimi.it/xoshiro128starstar.c
+SHA256: 2e3e540e15e1b1edf6144509ba3a71bc4611e3676d52e03d567a0f230a141a67
+License classification: public-domain dedication plus explicit permission;
+not relabeled as CC0 or MIT. The upstream permission follows verbatim.
+
+/*  Written in 2018 by David Blackman and Sebastiano Vigna (vigna@acm.org)
+
+To the extent possible under law, the author has dedicated all copyright
+and related and neighboring rights to this software to the public domain
+worldwide.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. */
+
+The seed initializer uses a Weyl increment 0x9e3779b9 and the published
+32-bit xmxmx mixer constants 0x21f0aaad / 0x735a2d97. These are not part of
+the cited xoshiro C file. The algorithm reference is TheIronBorn's search:
+https://github.com/skeeto/hash-prospector/issues/19
+The project does not have a pinned record showing code copied from Boost,
+Odin, a gist, or another implementation; matching mathematical constants alone
+are not asserted to establish such an acquisition chain. No third-party source
+file from those projects is redistributed as FlyFork original code.
+The hash-prospector project's public-domain dedication is preserved below as
+reference-project licensing, not a claim that it licenses every external comment.
+FNV-1a source-ID hashing and stream orchestration are separate project-local
+helpers. The numerical PRNG/seed behavior has not changed for this release.
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
