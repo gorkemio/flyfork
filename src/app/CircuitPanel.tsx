@@ -18,12 +18,12 @@ export function CircuitPanel({ telemetry, dataset }: {
    <svg className="network" viewBox="0 0 260 232" role="img" aria-label="Synthetic eight-neuron circuit: inputs, relays, inhibitory locals and outputs">
     <defs><marker id="arrow" viewBox="0 0 10 10" refX="15" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#507c90"/></marker></defs>
     {EDGES.map((e, i) => <line key={i} x1={positions[e.from][0]} y1={positions[e.from][1]} x2={positions[e.to][0]} y2={positions[e.to][1]} className={e.weight < 0 ? 'inhibitory' : 'connection'} markerEnd="url(#arrow)"/>)}
-    {NEURONS.map((n, i) => <g key={n}><circle cx={positions[i][0]} cy={positions[i][1]} r="14" fill={i < 2 ? '#4fdad7' : i < 4 ? '#eec775' : i < 6 ? '#aa88d8' : '#73bcf2'} opacity={0.16 + Math.max(0, ((telemetry?.v[i] ?? -52) + 52) / 7) * 0.5}/><circle cx={positions[i][0]} cy={positions[i][1]} r="5" fill={i < 2 ? '#61efe1' : i < 4 ? '#f4cb7c' : i < 6 ? '#b18ce3' : '#82d1ff'}/><text x={positions[i][0] + (i % 2 ? 10 : -10)} y={positions[i][1] - 12} textAnchor={i % 2 ? 'start' : 'end'}>{n}</text></g>)}
+    {NEURONS.map((n, i) => <g key={n}><circle cx={positions[i][0]} cy={positions[i][1]} r="14" fill={i < 2 ? '#4fdad7' : i < 4 ? '#eec775' : i < 6 ? '#aa88d8' : '#73bcf2'} opacity={telemetry ? 0.16 + Math.max(0, (telemetry.v[i] + 52) / 7) * 0.5 : 0}/><circle cx={positions[i][0]} cy={positions[i][1]} r="5" fill={i < 2 ? '#61efe1' : i < 4 ? '#f4cb7c' : i < 6 ? '#b18ce3' : '#82d1ff'}/><text x={positions[i][0] + (i % 2 ? 10 : -10)} y={positions[i][1] - 12} textAnchor={i % 2 ? 'start' : 'end'}>{n}</text></g>)}
    </svg>
-   <p className="caption">Fixture topology · glow reflects membrane potential</p>
+   <p className="caption">{telemetry ? 'Fixture topology · glow reflects membrane potential' : 'Fixture topology · membrane telemetry unavailable'}</p>
    <div className="hairline"/>
    <div className="section-heading"><h3>Membrane potential</h3><span className="unit">mV</span></div>
-   <div className="potentials">{NEURONS.map((n, i) => <div className="potential" key={n}><span>{n}</span><div className="meter"><i style={{ width: `${Math.max(1, Math.min(100, ((telemetry?.v[i] ?? -52) + 62) / 17 * 100))}%` }}/></div><code>{(telemetry?.v[i] ?? -52).toFixed(1)}</code></div>)}</div>
+   <div className="potentials">{NEURONS.map((n, i) => <div className="potential" key={n}><span>{n}</span><div className="meter" aria-hidden="true">{telemetry && <i style={{ width: `${Math.max(1, Math.min(100, (telemetry.v[i] + 62) / 17 * 100))}%` }}/>}</div><code>{telemetry?.v[i].toFixed(1) ?? '—'}</code></div>)}</div>
    <div className="threshold-note"><span>Rest −52</span><span>Threshold −45</span></div>
   </section>
   <section className="panel model-note"><span className="eyebrow">MODEL, NOT BIOLOGY</span><p>Synthetic inputs → LIF → body.</p><span className="caption">Engineering decoder. No animal data loaded.</span></section>

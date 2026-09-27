@@ -19,7 +19,7 @@ export function inputManifest() {
     }
     for (const dir of ['src', 'tests', 'scripts', 'public', 'data/prepared', 'deploy']) visit(resolve(dir));
     for (const file of ['Dockerfile', '.dockerignore']) visit(resolve(file));
-    for (const file of ['docs/plan/stage-3-behavior-preregistration.md', 'docs/evidence/stage-4/round-trip.flyfork.json']) visit(resolve(file));
+    for (const file of ['docs/testing/intervention-matrix.md', 'docs/evidence/stage-4/round-trip.flyfork.json']) visit(resolve(file));
     for (const name of readdirSync('.').sort()) if (/\.(json|yaml|[cm]?js|ts)$/.test(name) && lstatSync(name).isFile()) files[name] = sha256(readFileSync(name));
     return files;
 }

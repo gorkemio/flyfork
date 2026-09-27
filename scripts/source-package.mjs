@@ -12,6 +12,9 @@ const generated = new Set(['node_modules', 'dist', 'artifacts', '.pnpm-store']);
 
 function safePath(path) {
     if (typeof path !== 'string' || isAbsolute(path) || path.includes('\\') || path.split('/').some(p => ['', '.', '..'].includes(p))) throw new Error('Unsafe allowlist path');
+    if (/^(docs\/(plan|prompts|private|handoffs|audits|reference)(\/|$)|prompts(\/|$)|private(\/|$))/.test(path)
+        || /(^|\/)(AGENTS|CLAUDE|GEMINI|SKILL)\.md$/i.test(path)
+        || /^[^/]*(PROMPT|HANDOFF|AUDIT)[^/]*\.(md|txt)$/i.test(path)) throw new Error(`Private document forbidden in allowlist: ${path}`);
     if (path === manifestName) throw new Error('The manifest cannot hash itself');
     if (path.startsWith('docs/evidence/') && path !== fixture || /(^|\/)(\.env[^/]*|\.tools|\.agents|\.codex|\.git|node_modules|dist|artifacts|__pycache__|\.pnpm-store)(\/|$)/.test(path)
         || path.startsWith('data/raw/') || /\.(feather|zip|log|cpuprofile|pyc)$/.test(path)) throw new Error(`Private/generated content forbidden in allowlist: ${path}`);

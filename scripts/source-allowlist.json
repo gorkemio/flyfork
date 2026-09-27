@@ -46,9 +46,9 @@
       "purpose": "Public-facing developer/user/review documentation"
     },
     {
-      "path": "docs/plan/stage-3-behavior-preregistration.md",
-      "purpose": "Required matrix test preregistration; exact original bytes",
-      "sha256": "ea9b5b7803bb1eba43e6c26510e3c7e00506e0deec40bc6fc84551d69b1e0457"
+      "path": "docs/testing/intervention-matrix.md",
+      "purpose": "English transcription of the original intervention preregistration; distinct frozen transcription hash",
+      "sha256": "eb5ebbd6307bfe6d96a022ed4eb0f4400dcab940d37366c64b5a42a4f0540ea7"
     },
     {
       "path": "docs/record-format.md",
@@ -218,12 +218,12 @@
     {
       "path": "src/app/App.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "aed23e4735c1863f3c3df8f083bd3eebccf7898035fd01f011e326d2117dd6b7"
+      "sha256": "7f765f5b66baf22ddd4daf511c6e6b05c18a09c234bbc6a576a5e0799fb55f94"
     },
     {
       "path": "src/app/CircuitPanel.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "42cbb68cfaef37b52f326c090914aa5882df0caa3389477775f3193f2cc80a42"
+      "sha256": "cb04bbe5367acaf1f6bfa36d8c2bf4459b69c3b928e4395a582d63b2ef08d15f"
     },
     {
       "path": "src/app/Dialog.tsx",
@@ -243,12 +243,12 @@
     {
       "path": "src/app/InterventionPanel.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "baa83ff54b66a2942338221a2294eede9a2996cc4978f2fa913fc639f51c1d07"
+      "sha256": "3651a6923573ce4c4ecd87d9693182a4ea2671ca02c02679c656a9edca2ef401"
     },
     {
       "path": "src/app/MetricsPanel.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "2a7a2f5881ab4b0598afddd0d899be940c2f30e5fb345dc19e7587300d3e012c"
+      "sha256": "acad90d7d61783fbfccdbe24bd509fc984b9be98b74b27a09ea60e9220be4966"
     },
     {
       "path": "src/app/ModelDetails.tsx",
@@ -258,7 +258,7 @@
     {
       "path": "src/app/SelectedCircuit.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "afae5837773066e61f9fe982a28bd04cf3320cb0a84538d7767c740ddf7da19b"
+      "sha256": "5fe9199d621fcffa32cdf7a0966847a423b25aeaafcf5b123cb612883b940f0f"
     },
     {
       "path": "src/app/WorkspaceDialogs.tsx",
@@ -268,7 +268,7 @@
     {
       "path": "src/app/WorkspaceToolbar.tsx",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "1076dcbe9236d2cfaff468cde255a093843dc552826f6a861da3637fe70fd484"
+      "sha256": "696b5f92de003cf6fa916c4e95bd57c48f6c89ce771df90506536d19134e6183"
     },
     {
       "path": "src/app/control-intent.test.ts",
@@ -323,7 +323,7 @@
     {
       "path": "src/app/visual-slice.css",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "9cd0b41a3fc555b6450a31bc512cb44ddaeb78fa19ada0959a5c5f3a379b5d9f"
+      "sha256": "633d70ef6f62d05cfbf80318e73b138c9f5058d218ff6629ce0c94000dda61ec"
     },
     {
       "path": "src/datasets/adapter.ts",
@@ -373,7 +373,7 @@
     {
       "path": "src/experiments/matrix.test.ts",
       "purpose": "Unchanged product source or numerical/unit test",
-      "sha256": "93a75991f59429399215d90a59758bcebf6e793bf2b83868e43d203032d282d8"
+      "sha256": "58044d50e0d254cbd3904d24cb30ceea32b8de264dd1a1bf6fe015f5596c76dc"
     },
     {
       "path": "src/experiments/persistence.test.ts",
@@ -578,7 +578,7 @@
     {
       "path": "tests/e2e/command-activation.spec.ts",
       "purpose": "Existing browser/protocol test input or output-only helper",
-      "sha256": "ef1f15d9172b8c0e7a606c7bd0e5fcb934d0e43e67b0c77c01176d2f7c988a0c"
+      "sha256": "3a39fa010ba8de0734e20d8d51dcbdb727f720e9b630a090b9057b7163a6fb55"
     },
     {
       "path": "tests/e2e/full-rollout.spec.ts",
@@ -618,7 +618,7 @@
     {
       "path": "tests/e2e/stage3.spec.ts",
       "purpose": "Existing browser/protocol test input or output-only helper",
-      "sha256": "8a7cc6d687fed28662127ac2ff28025e9e3d2860ec4f404d596ec1e70185ec94"
+      "sha256": "64c350d2755c41fa4ea61ec7d63ff1abcc3b3cce9a7c9f78cee11ed4473ee206"
     },
     {
       "path": "tests/e2e/storage-faults.spec.ts",
@@ -806,6 +806,18 @@
     {
       "path": "docs/native-redistribution.md",
       "purpose": "Experimental manual publication, native license companion and checked retention operation"
+    },
+    {
+      "path": "ROADMAP.md",
+      "purpose": "Public milestones with deliverables and evidence conditions"
+    },
+    {
+      "path": "docs/research/overview.md",
+      "purpose": "Sanitized summary of retained local research findings and limits"
+    },
+    {
+      "path": "docs/images/main-interface.png",
+      "purpose": "Privacy-reviewed screenshot of the accepted real main-branch interface"
     }
   ]
 }

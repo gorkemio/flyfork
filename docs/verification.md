@@ -1,41 +1,47 @@
 # Verification status and evidence boundaries
 
-This public-facing summary derives from retained private reports and selected raw results. Those archives are not distributed or assigned a fictitious public URL. The only historical evidence file included here is the required generated [round-trip fixture](evidence/stage-4/round-trip.flyfork.json).
+Verification results describe a particular source, runtime and test scope. This page summarizes retained private evidence without publishing host paths, traces, user records or private archive links. The required generated [round-trip fixture](evidence/stage-4/round-trip.flyfork.json) is a test input, not a user's Library export.
 
-## Historical 4.5D-R3 baseline
+## Current source and interface
 
-- Two preregistered coverage runs each passed **113/113**, exit 0. Matrix durations: **113561.239 ms** and **113910.442 ms**, against **120000 ms**.
-- D-REGRESSION passed within its defined automated scope; D-COV and EVIDENCE_ROUTING passed. Coverage: lines 95.40%, branches 93.34%, functions 98.46%, statements 95.87%; thresholds stay 90/85/90/90.
-- COVERAGE_STABILITY covers only two samples. The narrowest margin is about **6.090 seconds / 5.07%**, not another-host assurance. CAUSE is **PARTIAL**: sampled advance/replay work dominated, but the unique cause of the historical 142911 ms timeout is unknown.
-- Twenty-three helper cases were added (38 total, 100% instrumented helper coverage). This is not React, Dexie or complete UI coverage.
-- R2 Chrome54/WebKit42/legacy smoke2/Python6 were **HASH_INHERITED into R3**, not new R3 browser/Python runs. Lost R2 coverage HTML/JSON remains a **DOCUMENTED_INCIDENT**; later guards did not restore originals.
+UI Refinement01-R1 preserves the experiment model and reorganizes existing controls/results. Its accepted local appearance is separate from production deployment. Historical R1 checks on **Node 24.21.0** passed 62 focused unit tests and 51 UI tests; they are not Node 24.19.0 reruns. The original tooling run passed 37 of 39 and failed two exact-runtime checks on 24.21.0; that failure remains retained.
 
-Historical product-manifest fingerprint: `b77c3f20316c5457e980865495e562deff51df5e79dea193e21c909ee43d3952`. Historical all-src fingerprint including unit tests: `119e978b50b52f684fb98d5f955f665435949962f165a3e0655888b557427fc1`. These inventories differ; neither is a Git commit or this archive's hash. Use SOURCE_MANIFEST for candidate membership and hashes.
+A later isolated **Node 24.19.0 / pnpm 11.25.0** run passed 39/39 tooling checks, typecheck, lint and build. Runtime acquisition used official HTTPS downloads and full SHA-256 comparison; PGP signature verification was not performed. Its first build-smoke launch inherited the wrong server configuration and working directory, exited before test execution and collected zero tests. That is a preserved **SETUP FAIL**, not application acceptance or a product failure.
 
-## Browser and device limits
+The public source now uses an [English transcription of the intervention preregistration](testing/intervention-matrix.md), with separate original and transcription hashes. All 24 numerical conditions, seeds, windows, assertions and the 120000 ms matrix timeout remain unchanged. Packaging rejects private plans, prompts and agent instructions while retaining the frozen data and round-trip fixture. New source-publication results are recorded separately below; earlier evidence is never relabelled.
 
-R2 production-preview evidence used macOS/M4 Pro, Google Chrome 153.0.8010.53 and Playwright WebKit 26.6 with Playwright 1.63.0. R3's reference Node was 24.19.0. These historical versions do not describe a later user's machine.
+At 390×844, the accepted arena begins approximately 1,046 px down the page, outside the first viewport. This remains a known usability limit. The existing 800 kB chunk-size warning is also retained; no bundle/renderer optimization accompanies this publication.
 
-Closed R1/R2 command, storage, round-trip, focus and cancellation fixes retain their scoped results. **D-WKSAVE and D-GUIDE remain OPEN_NOT_REPRODUCED.** The first WebKit Save failure trace exists and records a Saved expectation timing out while Unsaved history remained visible. The first Guide failure lacks equivalent trace/state capture. This corrects a later blanket "traceless" description; it does not establish a cause or fix.
+## Historical numerical and coverage results
 
-Firefox launch was **ENVIRONMENT_BLOCKED** before app acceptance; D-FF-APP is **NOT_RUN**. Real Safari and VoiceOver are **NOT_RUN**, pending user-operated M4 Pro checks. iPhone, Android and iPad access is **NOT_CONFIRMED**, physical acceptance **NOT_RUN**. WebKit and emulation do not replace those checks.
+The 4.5D-R3 baseline had two preregistered instrumented passes, each 113/113: matrix durations 113561.239 ms and 113910.442 ms against 120000 ms. Coverage was lines 95.40%, branches 93.34%, functions 98.46%, statements 95.87%; thresholds remain 90/85/90/90. Two samples provide only narrow evidence: the closest margin was about 6.090 s (5.07%). The unique cause of an earlier 142911 ms timeout remains only partially understood.
 
-Named Save frame extremes of 66.1/66.7 ms remain **OPEN_OBSERVATION**, not total Save duration or proven CPU task duration. Controlled physical performance and separate numerical R2 pending-text contrast remain open. Axe/screenshots are not complete WCAG or VoiceOver certification.
+A later clean Linux ARM64 coverage campaign **failed: 112/113, 144825.611 ms > 120000 ms**. All 24 numerical/replay rows matched, but that does not override its timeout. The experimental release accepts this instrumentation/deadline limitation; it does not turn coverage green. The coverage command, provider, timeout, conditions and thresholds remain protected. Required source CI runs the normal unit/golden suite, not a new instrumented coverage campaign.
 
-## Source-packaging scope
+R2 Chrome 54, WebKit 42, legacy smoke 2 and Python 6 results were inherited into R3 by hash, not executed again there. Lost R2 coverage HTML/JSON remains a documented incident; later output guards did not restore the originals. Historical source fingerprints describe those old inventories, not the current candidate or Git commit.
 
-Work Package 1 changes docs, notices, packaging and output routing. Product algorithms, existing assertions, data, lockfile and thresholds remain protected. Tiny real-reporter tooling tests are not numerical/browser acceptance. Routing/config differences are reported separately; old hash inheritance is not a new campaign on this candidate.
+## Browser, storage and device history
 
-Each command records a plan, effective output destinations and exit status in a fresh artifact root. A clean host build is not Linux/container/Netcup acceptance. The local delivery report supplies actual installation/build/tooling results. Full acceptance, independent review and publication are later work packages.
+Historical R2 production-preview checks used macOS/M4 Pro, Chrome 153.0.8010.53 and Playwright WebKit 26.6 with Playwright 1.63.0. These versions describe those runs, not every later machine.
 
-## Stage 5 acceptance boundary
+Earlier isolated WebKit Save and Guide observations remain **OPEN_NOT_REPRODUCED**. The first WebKit Save trace records a Saved expectation timing out while Unsaved history remained visible; the first Guide observation lacks equivalent trace/state capture. Neither a later pass nor a missing trace proves the cause fixed.
 
-WP3 ran one clean Linux ARM64 coverage campaign:112/113, matrix144825.611ms against120000ms, exit1 **FAIL**. All24 numerical/replay rows matched; that does not override the timeout. R3's two historical host passes remain separate, CAUSE PARTIAL and narrow margin remain. R1 does not rerun full coverage or change its provider, timeout, scope or algorithms. Normal unit/golden/matrix results on the repaired source are a different gate.
+WP3 Chrome passed 54 tests. Its first WebKit run passed 41/42 with a transaction-origin CSP failure, followed by a distinct 1/1 harness check. Firefox retained 40/42 with import/load and unavailable-WebGL failures. A separate production-CSP 5/12 record smoke passed all three engines while excluding Firefox rendering. These scopes must not be combined into universal browser acceptance.
 
-WP3 Chrome54 passed; first WebKit41/42 had a transaction-origin CSP failure, followed by a separate1/1 harness pass. Firefox40/42 retained import/load and unavailable WebGL failures. Separate production-CSP5/12 smoke passed all three engines, excluding Firefox rendering. Normal M4 drawing passed in that bounded sample; long Save frames remained open. R1 local delivery records its own final source/image, focus fixes, test changes and generation-pair results; no old archive is labelled a new run.
+Physical Safari/VoiceOver remains **NOT_RUN**; iPhone, Android and iPad access is **NOT_CONFIRMED**, physical acceptance **NOT_RUN**. Browser engines and CSS viewport emulation do not substitute for those checks. Automated accessibility checks do not certify full WCAG or screen-reader usability.
 
-Use the [release pair and runtime test instructions](release-pair.md) for current packaging. Real Safari/VoiceOver remain user-operated NOT_RUN; mobile access NOT_CONFIRMED. Independent review and publication remain separately authorized.
+Named-Save frame samples of 66.1/66.7 ms and later roughly 71 ms spacing remain observations, not total Save duration or universal ceilings. Earlier 300–360 ms commit observations are also bounded samples. Controlled physical performance remains open. The 120 model-second record limit differs from a 120 wall-clock-second test deadline.
 
-## First experimental public release
+## Interpreting a new release
 
-Coverage120s remains historical FAIL:112/113,144825.611ms >120000ms; it is an explicitly accepted exception for this narrow preview, not a green coverage gate. The current release runs full normal unit/golden and packaging checks without a new coverage/browser/performance campaign. Public HTTPS5/12 and one same-origin pair rollback are launch-specific checks; their actual results and registry identities belong to the release notes. Historical platform limitations above are not erased. See [release decisions](release-preparation.md).
+Each protected command records input identity, output destinations and exit status in a fresh evidence directory. A source candidate is identified by its manifest and archive hashes; a build-info hash, Git commit and registry digest are distinct identities. Source-package verification checks membership, bytes, permissions and relative links in an independently extracted candidate.
+
+[Required source CI](../.github/workflows/verify.yml) performs exact Linux-toolchain installation, typecheck, lint, normal unit/golden tests, build, tooling and package checks. Only its result for the exact pushed commit applies. [Manual image publication](../.github/workflows/publish.yml) reuses that build; it does not deploy. A local build smoke is not Dokploy, container, TLS or CDN acceptance. Public launch and rollback observations belong to the particular release's notes and identities. See [deployment](deployment.md) and [release decisions](release-preparation.md).
+
+## R1 source-publication local checks (2026-09-27)
+
+The isolated Node 24.19.0 / existing pnpm 11.25.0 run passed **40/40 tooling tests**, typecheck, lint and build. The affected normal matrix test passed once with all **24 conditions** and exact own-history replay, in about 34 s; this was not instrumented coverage or a repeat of B0/R01/R02.
+
+After a separate resolved-config/test-list inspection, **one corrected Chrome build smoke passed (1/1, retries=0)** against a separately served verified production build. It exercised a genuine record viewed at 5 s with a 12 s frontier, Save, reload, Library load, export/import into a fresh context and fresh Replay at 5 and 12 s. The inherited development web server was entirely omitted. The earlier zero-test SETUP FAIL remains preserved. This pass establishes local build behavior, not public TLS/CDN/container or physical-device acceptance.
+
+Accepted R1 source bytes remain unchanged during publication. Only matrix document identity/report prose and source-packaging/documentation metadata changed beyond that accepted interface. Final source-candidate and exact-commit CI identities are recorded in the release evidence, separately from these local runs.

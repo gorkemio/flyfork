@@ -57,7 +57,7 @@ test('R2 release outside during recovery is cancelled native gesture and execute
     const { start } = await comparePointer(page, true);
     expect((await activationEvents(page)).slice(start).filter(e => e.type === 'click' && e.name === 'Compare states')).toHaveLength(0);
     await release(page);
-    await expect(page.getByText(/Last durable recovery: view 1.00 s/)).toBeVisible();
+    await expect(page.getByRole('region', { name: 'Experiment status' }).getByText('View 1.00 s / recorded 1.00 s', { exact: true })).toBeVisible();
     expect((await activationEvents(page)).slice(start).filter(e => e.type === 'command' && e.command === 'COMPARE')).toHaveLength(0);
     expect(await digest(page)).toEqual(before);
 });
@@ -104,7 +104,7 @@ test('R2 pending Cancel is visible, preserves recovery commit, then permits new 
     await nativeButton(page, 'Cancel pending command');
     await expect(page.getByTestId('control-status')).toContainText(/cancel/i);
     await release(page);
-    await expect(page.getByText(/Last durable recovery: view 1.00 s/)).toBeVisible();
+    await expect(page.getByRole('region', { name: 'Experiment status' }).getByText('View 1.00 s / recorded 1.00 s', { exact: true })).toBeVisible();
     expect((await activationEvents(page)).slice(start).filter(e => e.type === 'command' && e.command === 'COMPARE')).toHaveLength(0);
     const next = (await activationEvents(page)).length;
     await nativeButton(page, 'Compare states');
@@ -269,7 +269,7 @@ test('R2 real recovery transaction abort settles before Compare and preserves th
     await forked(page);
     // Establish the prior durable record, then change the real experiment before
     // starting the new input race. No wait masks the recovery under examination.
-    await expect(page.getByText(/Last durable recovery: view 1.00 s/)).toBeVisible({ timeout: 12000 });
+    await expect(page.getByRole('region', { name: 'Experiment status' }).getByText('View 1.00 s / recorded 1.00 s', { exact: true })).toBeVisible({ timeout: 12000 });
     async function durableDigest() {
         return page.evaluate(() => new Promise<string>((resolve, reject) => {
             const open = indexedDB.open('flyfork-library');
@@ -346,7 +346,7 @@ for (const finish of ['complete', 'cancel'] as const) test(`R2 390 px pending ${
     await release(page);
     if (finish === 'complete') await expectOneCommand(page, 'COMPARE', start);
     else {
-        await expect(page.getByText(/Last durable recovery: view 1.00 s/)).toBeVisible();
+        await expect(page.getByRole('region', { name: 'Experiment status' }).getByText('View 1.00 s / recorded 1.00 s', { exact: true })).toBeVisible();
         expect(await commandReplies(page, 'COMPARE', start)).toHaveLength(0);
         await expect(page.getByTestId('control-status')).toHaveText('Command cancelled.');
     }

@@ -8,7 +8,7 @@ The selection cuts **184,078 of 214,714 incoming** and **323,986 of 354,622 outg
 
 LIF dynamics, the fixed 0.1 ms Float64 timestep, refractory handling, odor field, stochastic streams, world and PN-to-body decoder are engineering assumptions. PN means projection neuron, not motor neuron. The decoder divisor 400 and 6 units/s speed cap can dominate movement. This is not a whole brain, validated animal behavior, biological control success or institutional endorsement.
 
-The [engine](../src/simulation/engine.ts), [parameters](../src/simulation/config.ts), [PRNG](../src/simulation/prng.ts) and [dataset adapter](../src/datasets/adapter.ts) are the implementation. [Behavior preregistration](plan/stage-3-behavior-preregistration.md) stays byte-identical as a test input. Compare and own-history replay test different properties; neither establishes biology or cross-runtime bit equality.
+The [engine](../src/simulation/engine.ts), [parameters](../src/simulation/config.ts), [PRNG](../src/simulation/prng.ts) and [dataset adapter](../src/datasets/adapter.ts) are the implementation. [The intervention specification](testing/intervention-matrix.md) is a faithful English transcription of the original preregistration, with separate original and transcription hashes. Compare and own-history replay test different properties; neither establishes biology or cross-runtime bit equality.
 
 ## Optional data tools
 

@@ -1,12 +1,12 @@
 {
-  "release": "v0.1.0-preview.1",
+  "release": "v0.1.0-preview.2",
   "builder": "node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df",
-  "previousManifestSha256": "11bb8734e76ef17bb5dd568ac8e9f17784c7c1a438603e86876f08fbff796acb",
+  "previousManifestSha256": "4b04d49783f166eaf8b706995628b29255e5bce9c7ebb42b152956e4d1dfd027",
   "assets": [
     {
       "name": "previous-own-generation.tar.gz",
       "directory": "previous",
-      "sha256": "a2f28736e18080a0cbb31a4acc67c497989805d49ce6c9ee5acb3cc48bd5154e"
+      "sha256": "42dd7aa58d59e91700f7bf61597fe0fcd7574373b1ef6807f65ac15b0359bbf1"
     },
     {
       "name": "native-notices.tar.gz",

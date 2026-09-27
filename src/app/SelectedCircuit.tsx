@@ -14,8 +14,8 @@ export function SelectedCircuit({ dataset, telemetry }: {
             {dataset.groups.map((g, i) => <g key={g.name}><circle cx={positions[i][0]} cy={positions[i][1]} r="15" fill={i < 2 ? '#61efe1' : i < 4 ? '#f4cb7c' : '#b18ce3'} opacity=".22"/><circle cx={positions[i][0]} cy={positions[i][1]} r="5" fill={i < 2 ? '#61efe1' : i < 4 ? '#f4cb7c' : '#b18ce3'}/><text x={positions[i][0]} y={positions[i][1] + 21} textAnchor="middle">{g.name} ({g.indices.length})</text></g>)}
         </svg>
         <p className="caption">Type/side aggregation · source synapse counts</p><div className="hairline"/>
-        <details><summary>PN cell readouts · mV / Hz</summary>
-        <div className="real-readouts">{pn.map(n => <div key={n.id}><span>DM1_lPN {n.side}<small> ID {n.id}</small></span><code>{(telemetry?.v[n.index] ?? -52).toFixed(1)} / {(telemetry?.motorFilter[n.side === 'L' ? 0 : 1] ?? 0).toFixed(1)}</code></div>)}</div></details>
+        <details><summary>PN cell readouts · mV / filtered Hz</summary>
+        <div className="real-readouts">{pn.map(n => <div key={n.id}><span>DM1_lPN {n.side}<small> ID {n.id}</small></span><code>{telemetry?.v[n.index].toFixed(1) ?? '—'} / {telemetry?.motorFilter[n.side === 'L' ? 0 : 1].toFixed(1) ?? '—'}</code></div>)}</div></details>
         <p className="caption model-id">{dataset.model}</p><p className="caption">ORN side: nerve entry. PN side: soma.<br />Bilateral source connections retained.</p>
         </section>
         <section className="panel model-note"><span className="eyebrow">REAL CONNECTIVITY · ASSUMED DYNAMICS</span><p>ORN → LIF network → PN readout → body.</p><span className="caption">PNs are projection neurons. The motion decoder is engineered; animal behavior is unvalidated.</span><a className="caption credit-link" href="https://male-cns.janelia.org/download/" target="_blank" rel="noreferrer">MaleCNS collaboration</a><a className="caption" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 · selected and transformed</a></section>

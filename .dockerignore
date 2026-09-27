@@ -17,3 +17,21 @@ data/raw
 docs/evidence/**
 !docs/evidence/stage-4/
 !docs/evidence/stage-4/round-trip.flyfork.json
+
+# Private authoring and review material is never public source or build input.
+docs/plan/
+docs/prompts/
+docs/private/
+docs/handoffs/
+docs/audits/
+docs/reference/
+prompts/
+private/
+**/AGENTS.md
+**/CLAUDE.md
+**/GEMINI.md
+**/SKILL.md
+/*PROMPT*.md
+/*PROMPT*.txt
+/*HANDOFF*.md
+/*AUDIT*.md

@@ -20,3 +20,9 @@ New files are not automatically packaged: add an explicit path and purpose to [t
 Python data sources are for inspection and separately scoped data work, not normal app build. Dataset selection, model parameters and fixture bytes require their own reviewed evidence.
 
 For ordinary bugs, include steps, candidate/build identity, actual browser/OS and expected versus observed behavior. Review attachments for personal data. Report security issues privately as described in [SECURITY](SECURITY.md). No CI badge, response deadline or support SLA is claimed.
+
+## Documentation and research contributions
+
+Public first-party prose is English. Preserve proper names, scientific IDs, original licenses and frozen data. The [public roadmap](ROADMAP.md) identifies scoped opportunities; the [research overview](docs/research/overview.md) separates model evidence from unresolved biological mapping. Label AI-assisted development or review honestly if described; model agreement is not scientific evidence.
+
+Keep private plans, prompts, agent instructions, review archives and design references outside the public tree and Docker context. The [intervention specification](docs/testing/intervention-matrix.md) is a relocated English transcription, not a new preregistration. Its original provenance hash differs from its frozen English-file hash. Preserve the 24 conditions and historical evidence identities.

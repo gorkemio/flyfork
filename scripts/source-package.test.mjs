@@ -39,6 +39,15 @@ test('duplicates, unsafe paths, private content classes and symlinks are rejecte
     assert.throws(() => createCandidate(symlink, resolve(root, 'linked-candidate')), /Symlink/);
 });
 
+test('private plans, prompts, instructions and handoffs cannot enter a source candidate', () => {
+    for (const [i, path] of ['docs/plan/stage-3-behavior-preregistration.md', 'docs/prompts/request.md', 'docs/private/report.md', 'docs/handoffs/local.md', 'docs/audits/review.md', 'docs/reference/design.png', 'prompts/request.txt', 'private/report.md', 'AGENTS.md', 'nested/SKILL.md', 'FLYFORK_PLAN_PROMPT.md', 'HANDOFF.md'].entries()) {
+        const dir = fixture(`private-document-${i}`, [{ path, purpose: 'forbidden private document' }]);
+        const dest = resolve(root, `private-document-candidate-${i}`);
+        assert.throws(() => createCandidate(dir, dest), /Private document/);
+        assert.equal(existsSync(dest), false, 'rejection precedes candidate creation');
+    }
+});
+
 test('frozen input mismatch, changed candidate bytes and unexpected files fail verification', () => {
     const frozen = fixture('frozen', [{ path: 'README.md', purpose: 'frozen', sha256: '0'.repeat(64) }]);
     assert.throws(() => createCandidate(frozen, resolve(root, 'frozen-candidate')), /hash/);
@@ -54,7 +63,7 @@ test('frozen input mismatch, changed candidate bytes and unexpected files fail v
 
 test('real source allowlist explicitly retains both mandatory inputs and all product tests', () => {
     const files = readAllowlist(process.cwd());
-    for (const path of ['docs/plan/stage-3-behavior-preregistration.md', 'docs/evidence/stage-4/round-trip.flyfork.json', 'src/experiments/matrix.test.ts', 'tests/e2e/library-transactions.spec.ts', 'tests/r3-matrix-probe.ts']) assert.ok(files.some(file => file.path === path), path);
+    for (const path of ['docs/testing/intervention-matrix.md', 'docs/evidence/stage-4/round-trip.flyfork.json', 'src/experiments/matrix.test.ts', 'tests/e2e/library-transactions.spec.ts', 'tests/r3-matrix-probe.ts']) assert.ok(files.some(file => file.path === path), path);
     assert.deepEqual(files.filter(file => file.path.startsWith('docs/evidence/')).map(file => file.path), ['docs/evidence/stage-4/round-trip.flyfork.json']);
 });
 
