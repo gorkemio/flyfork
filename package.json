@@ -51,7 +51,7 @@
     "type": "git",
     "url": "https://github.com/gorkemio/flyfork.git"
   },
-  "homepage": "https://flyfork.org",
+  "homepage": "https://github.com/gorkemio/flyfork",
   "bugs": {
     "url": "https://github.com/gorkemio/flyfork/issues"
   }

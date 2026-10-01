@@ -9,7 +9,7 @@ This roadmap describes product and research directions, not a private execution 
 - Browser-local Library, portable export/import and bounded recovery.
 - Manual static deployment with immutable image identities and a two-generation rollback policy.
 
-These capabilities retain the [model limitations](docs/model.md), [storage boundaries](docs/usage.md) and [verification history](docs/verification.md). A repository update does not automatically update the live demo.
+These capabilities retain the [model limitations](docs/model.md), [storage boundaries](docs/usage.md) and [verification history](docs/verification.md).
 
 ## Completed locally, with retained evidence
 

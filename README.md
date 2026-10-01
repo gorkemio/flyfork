@@ -4,7 +4,7 @@ FlyFork is an open-source browser lab for reproducible experiments on neural cir
 
 The question is practical: **what changes when one intervention starts from exactly the same simulated state?** Students can explore controlled comparisons; researchers and developers can inspect the assumptions, reuse the branching machinery, and propose better measurements. The current experimental circuit contains **80 neurons**, not a whole brain.
 
-[Live desktop demo](https://flyfork.org) · [Source and issues](https://github.com/gorkemio/flyfork) · [Usage](docs/usage.md) · [Research](docs/research/overview.md) · [Roadmap](ROADMAP.md)
+[Source and issues](https://github.com/gorkemio/flyfork) · [Usage](docs/usage.md) · [Research](docs/research/overview.md) · [Roadmap](ROADMAP.md)
 
 > **Experimental preview.** Real connectivity does not establish biological validity. Library records stay in your browser: export important experiments as files. There is no account or cloud backup. Desktop Chrome is the primary interaction path; physical phone/tablet and Safari/VoiceOver acceptance remain unconfirmed.
 
@@ -18,7 +18,7 @@ A snapshot captures neural buffers, delayed signals, random-number streams, filt
 
 ![Main-branch interface: real three-branch experiment at 12 simulated seconds](docs/images/main-interface.png)
 
-*Main-branch interface, UI Refinement01-R1. This real recorded experiment has an unnamed workspace and shows calculated state. The live demo is deployed separately and may run an earlier revision.*
+*Main-branch interface, UI Refinement01-R1. This real recorded experiment has an unnamed workspace and shows calculated state.*
 
 ## What is real, and what is assumed?
 
