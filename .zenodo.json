@@ -1,0 +1,23 @@
+{
+  "upload_type": "software",
+  "title": "FlyFork: Experimental deterministic branching simulation from a selected Drosophila connectome circuit",
+  "creators": [
+    {
+      "name": "Özdemir, Görkem İnanç",
+      "orcid": "0009-0006-6383-221X"
+    }
+  ],
+  "license": "mit",
+  "description": "FlyFork is an open-source browser lab for reproducible, deterministic branching experiments on an 80-neuron DM1 olfactory circuit (4,011 directed neuron-pair edges; 30,636 internal synapses) derived from MaleCNS v1.0 Drosophila connectome data. Users can capture complete simulated states, fork into Original, Fork A, and Fork B trajectories, apply timed suppression or odor-gain interventions, export/import portable JSON records, and verify own-history replay. This archive contains the FlyFork simulation software, frozen prepared DM1 circuit subset, and verification/test suite. Biological validity is not claimed; dedicated B0/R01/R02 local research runners and raw archives are separate from this public release (see docs/research/overview.md and docs/model.md).",
+  "notes": "Mixed-license provenance notice: Original FlyFork source code is licensed under the MIT License (Copyright (c) 2026 Görkem İnanç Özdemir). The bundled prepared MaleCNS v1.0 connectome subset (data/prepared/male-cns-dm1.json) is licensed under CC BY 4.0 (MaleCNS collaboration: FlyEM/HHMI Janelia, University of Cambridge, MRC LMB, Google Research). Bundled arena floor textures derive from Poly Haven Concrete Floor 02 under CC0. Full third-party notices and provenance manifests are included in docs/licenses.md and public/third-party-notices.txt.",
+  "keywords": [
+    "computational neuroscience",
+    "Drosophila",
+    "connectome",
+    "MaleCNS",
+    "spiking neural network",
+    "leaky integrate-and-fire",
+    "reproducible research",
+    "simulation"
+  ]
+}
