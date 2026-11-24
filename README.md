@@ -1,5 +1,8 @@
 # FlyFork
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24514875.svg)](https://doi.org/10.5281/zenodo.24514875)
+
 FlyFork is an open-source browser lab for reproducible experiments on neural circuits derived from fruit-fly connectome data. Capture one complete simulated state, branch it into alternative futures, apply controlled interventions, and compare what changes while preserving the history needed to replay and inspect the experiment.
 
 The question is practical: **what changes when one intervention starts from exactly the same simulated state?** Students can explore controlled comparisons; researchers and developers can inspect the assumptions, reuse the branching machinery, and propose better measurements. The current experimental circuit contains **80 neurons**, not a whole brain.
