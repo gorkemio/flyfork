@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use FlyFork in your work, please cite it using the metadata from this file."
+type: software
+title: "FlyFork: Experimental deterministic branching simulation from a selected Drosophila connectome circuit"
+version: "0.1.0"
+date-released: "2026-11-24"
+license: "MIT"
+repository-code: "https://github.com/gorkemio/flyfork"
+url: "https://github.com/gorkemio/flyfork"
+abstract: "FlyFork is an open-source browser lab for reproducible, deterministic branching experiments on an 80-neuron DM1 olfactory circuit derived from MaleCNS v1.0 Drosophila connectome data. Users can capture complete simulated states, fork into alternative futures, apply controlled interventions, and verify own-history replay."
+authors:
+  - family-names: "Özdemir"
+    given-names: "Görkem İnanç"
+    orcid: "https://orcid.org/0009-0006-6383-221X"
+keywords:
+  - "computational neuroscience"
+  - "Drosophila"
+  - "connectome"
+  - "MaleCNS"
+  - "spiking neural network"
+  - "leaky integrate-and-fire"
+  - "reproducible research"
+  - "simulation"
