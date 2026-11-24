@@ -818,6 +818,14 @@
     {
       "path": "docs/images/main-interface.png",
       "purpose": "Privacy-reviewed screenshot of the accepted real main-branch interface"
+    },
+    {
+      "path": "CITATION.cff",
+      "purpose": "Software citation metadata for GitHub and archival discovery"
+    },
+    {
+      "path": ".zenodo.json",
+      "purpose": "Zenodo archival metadata with ORCID and mixed-license provenance notes"
     }
   ]
 }
