@@ -4,6 +4,14 @@ type: software
 title: "FlyFork: Experimental deterministic branching simulation from a selected Drosophila connectome circuit"
 version: "0.1.0"
 date-released: "2026-11-24"
+doi: "10.5281/zenodo.24514875"
+identifiers:
+  - description: "Concept DOI representing all versions of FlyFork (always resolves to the latest version)"
+    type: doi
+    value: "10.5281/zenodo.24514875"
+  - description: "Version DOI for FlyFork v0.1.0"
+    type: doi
+    value: "10.5281/zenodo.24514876"
 license: "MIT"
 repository-code: "https://github.com/gorkemio/flyfork"
 url: "https://github.com/gorkemio/flyfork"
